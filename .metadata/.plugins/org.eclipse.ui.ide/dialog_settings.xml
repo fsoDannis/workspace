@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="/Users/Dannis/Documents/Full Sail School Files/2.12.ASD.Revised/couch" key="OUTSIDE_LOCATION"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="527" key="DIALOG_WIDTH"/>
+		<item value="22" key="DIALOG_Y_ORIGIN"/>
+		<item value="360" key="DIALOG_X_ORIGIN"/>
+		<item value="529" key="DIALOG_HEIGHT"/>
+		<item value="1|Lucida Grande|11.0|0|COCOA|1|LucidaGrande" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.android.ide.eclipse.adt.project.NewProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.android.ide.eclipse.wizards.category"/>
+			<item value="com.pittypanda.plugins.couch.category"/>
+			<item value="com.mds.apg.category.wizards"/>
+		</list>
+	</section>
+</section>
