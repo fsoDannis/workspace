@@ -84,7 +84,6 @@ public class MainActivity extends Activity {
 		//Setting a Horizontal Layout
 		LinearLayout form = new LinearLayout(this);
 		form.setOrientation(LinearLayout.HORIZONTAL);
-		lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
 		form.setLayoutParams(lp);
 		
 		//Adding the edit Text and the Button to the layout
@@ -92,6 +91,7 @@ public class MainActivity extends Activity {
 		form.addView(b);
 		
 		result = new TextView(this);
+		result.setLayoutParams(lp);
 		ll.addView(result);
 		
 		//Adding the form to the screen
