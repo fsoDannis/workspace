@@ -53,33 +53,26 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				String check = et.getText().toString();
-					if (check.length() <= 0){
-						et.setHintTextColor(getResources().getColor(R.color.solid_red));
-						et.setHint("You must enter a number");
-						
-					}else{
+				int quarter = getResources().getInteger(R.integer.quarter);
+				int nickel = getResources().getInteger(R.integer.nickel);
+				int dime = getResources().getInteger(R.integer.dime);
+				int penny = getResources().getInteger(R.integer.penny);
 				
-						int quarter = getResources().getInteger(R.integer.quarter);
-						int nickel = getResources().getInteger(R.integer.nickel);
-						int dime = getResources().getInteger(R.integer.dime);
-						int penny = getResources().getInteger(R.integer.penny);
+				int entry = Integer.parseInt(et.getText().toString());
 						
-						int entry = Integer.parseInt(et.getText().toString());
-								
-						int numQ = (100/quarter)*entry;
-						int numD = (100/dime)*entry;
-						int numN = (100/nickel)*entry;
-						int numP = (100/penny)*entry;
-						
-						
-						result.setText("Quarters: " + numQ + "\r\n" +
-								"Dimes: " + numD + "\r\n" +
-								"Nickels: " + numN + "\r\n" +
-								"Pennies: " + numP + "\r\n"
-								);
-					}}
-				});
+				int numQ = (100/quarter)*entry;
+				int numD = (100/dime)*entry;
+				int numN = (100/nickel)*entry;
+				int numP = (100/penny)*entry;
+				
+				
+				result.setText("Quarters: " + numQ + "\r\n" +
+						"Dimes: " + numD + "\r\n" +
+						"Nickels: " + numN + "\r\n" +
+						"Pennies: " + numP + "\r\n"
+						);
+			}
+		});
 			
         // Loop of Characters
         String[] characters = {"Ironman", "HawkEye", "The Hulk", "Captain America"};

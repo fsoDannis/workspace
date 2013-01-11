@@ -53,11 +53,9 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				String check = et.getText().toString();
-					if (check.length() <= 0){
-						et.setHintTextColor(getResources().getColor(R.color.solid_red));
+				String entry = et.getText().toString();
+					if (entry.length() <= 0){
 						et.setHint("You must enter a number");
-						
 					}else{
 				
 						int quarter = getResources().getInteger(R.integer.quarter);
