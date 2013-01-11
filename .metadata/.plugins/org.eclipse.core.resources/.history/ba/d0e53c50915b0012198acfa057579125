@@ -39,12 +39,12 @@ public class MainActivity extends Activity {
 		//Add an Edit Field with a Hint
 		EditText et = new EditText(this);
 		et.setHint("Type some info here!");
-		//ll.addView(et);
+		ll.addView(et);
 		
 		//Add a button and set the text
 		Button b = new Button(this);
 		b.setText("Click Me!");
-		//ll.addView(b);
+		ll.addView(b);
 		
 		//Setting a Horizontal Layout
 		LinearLayout form = new LinearLayout(this);
@@ -53,8 +53,6 @@ public class MainActivity extends Activity {
 		
 		form.addView(et);
 		form.addView(b);
-		
-		ll.addView(form);
 		
 		setContentView(ll);
 		
