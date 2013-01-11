@@ -53,7 +53,6 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				//If Statement.. If Blank change hint color and message
 				String check = et.getText().toString();
 					if (check.length() <= 0){
 						et.setHintTextColor(getResources().getColor(R.color.solid_red));
