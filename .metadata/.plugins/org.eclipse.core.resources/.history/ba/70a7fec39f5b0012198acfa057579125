@@ -33,21 +33,25 @@ public class MainActivity extends Activity {
 		//Log.i("TEST", "TEST TEST TEST");
 		
 		
-		// Add a text view
+/*		// Add a text view
 		tv = new TextView(this);
-		//tv.setText(R.string.hello_dan);
+		tv.setText(R.string.hello_dan);
 		//tv.setText("Hi Dan...");
-		ll.addView(tv);
+		ll.addView(tv);*/
 		
+		// Add a another text view to add nums
+		TextView tv2 = new TextView(this);
+		tv2.setText(getString(R.string.quarter)+", "+getString(R.string.dime));
+		ll.addView(tv2);
 		
 		//Add an Edit Field with a Hint
 		et = new EditText(this);
-		et.setHint("How much bucks you got?");
+		et.setHint("Type some info here!");
 		//ll.addView(et);
 		
 		//Add a button and set the text
 		Button b = new Button(this);
-		b.setText("Convert those Dollars!");
+		b.setText("Click Me!");
 		//ll.addView(b);
 		b.setOnClickListener(new View.OnClickListener() {
 			

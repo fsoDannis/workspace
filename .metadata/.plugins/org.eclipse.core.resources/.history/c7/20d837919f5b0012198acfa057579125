@@ -19,7 +19,9 @@ public class MainActivity extends Activity {
 	EditText et;
 	TextView tv;
 	TextView result;
-
+	TextView altTv;
+	boolean addTextView;
+	
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -35,19 +37,23 @@ public class MainActivity extends Activity {
 		
 		// Add a text view
 		tv = new TextView(this);
-		//tv.setText(R.string.hello_dan);
+		tv.setText(R.string.hello_dan);
 		//tv.setText("Hi Dan...");
 		ll.addView(tv);
 		
+		// Add a another text view to add nums
+		TextView tv2 = new TextView(this);
+		tv2.setText(getString(R.string.quarter)+", "+getString(R.string.dime));
+		ll.addView(tv2);
 		
 		//Add an Edit Field with a Hint
 		et = new EditText(this);
-		et.setHint("How much bucks you got?");
+		et.setHint("Type some info here!");
 		//ll.addView(et);
 		
 		//Add a button and set the text
 		Button b = new Button(this);
-		b.setText("Convert those Dollars!");
+		b.setText("Click Me!");
 		//ll.addView(b);
 		b.setOnClickListener(new View.OnClickListener() {
 			
@@ -82,7 +88,19 @@ public class MainActivity extends Activity {
           tv.append((characters[i]+"\n"));
         }
 		
-
+        // Alternate TextView for condition
+        altTv = new TextView(this);
+        altTv.setText("Boolean was not set to yes.");
+        
+        // Added textView to Layout with condition and boolean values
+        String input = "yes";
+        if (input.equals("yes")) {
+           addTextView = true;
+           ll.addView(tv);
+        } else {
+         addTextView = false;
+         ll.addView(altTv);
+        }
 		
 		//Setting a Horizontal Layout
 		LinearLayout form = new LinearLayout(this);
