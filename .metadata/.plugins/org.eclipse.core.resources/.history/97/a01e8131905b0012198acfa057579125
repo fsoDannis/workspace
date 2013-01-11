@@ -31,7 +31,6 @@ public class MainActivity extends Activity {
 		
 		TextView tv = new TextView(this);
 		//tv.setText(R.string.hello_world);
-		tv.setText("Hi Dan...");
 		
 		ll.addView(tv);
 		
