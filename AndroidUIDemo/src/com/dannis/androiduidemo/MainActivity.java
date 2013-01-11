@@ -2,9 +2,11 @@ package com.dannis.androiduidemo;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
 public class MainActivity extends Activity {
@@ -22,6 +24,13 @@ public class MainActivity extends Activity {
 		ll.setOrientation(LinearLayout.VERTICAL);
 		lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
 		ll.setLayoutParams(lp);
+		Log.i("TEST", "TEST TEST TEST");
+		TextView tv = new TextView(this);
+		tv.setText(R.string.hello_world);
+		
+		ll.addView(tv);
+		
+		setContentView(ll);
 		
 	}
 
