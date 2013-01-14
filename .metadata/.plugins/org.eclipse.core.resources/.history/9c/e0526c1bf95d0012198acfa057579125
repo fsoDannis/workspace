@@ -64,7 +64,7 @@ public class MainActivity extends Activity {
 						et.setHint("You must enter a Number...");
 						
 					}else{
-						
+				
 						int Jin = getResources().getInteger(R.integer.Jin);
 						int Nguyen = getResources().getInteger(R.integer.Nguyen);
 						int Niko = getResources().getInteger(R.integer.Niko);

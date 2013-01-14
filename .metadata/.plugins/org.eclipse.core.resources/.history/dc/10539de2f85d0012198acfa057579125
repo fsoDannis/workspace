@@ -13,17 +13,21 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 import android.graphics.Color;
-
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 public class MainActivity extends Activity {
 
 	LinearLayout ll;
 	LinearLayout.LayoutParams lp;
 	TextView tArray;
+
 	EditText et;
 	TextView tv;
 	TextView result;
-	boolean bool;
+
+	Boolean addTextViewRed;
+	AlertDialog alert;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -64,7 +68,7 @@ public class MainActivity extends Activity {
 						et.setHint("You must enter a Number...");
 						
 					}else{
-						
+				
 						int Jin = getResources().getInteger(R.integer.Jin);
 						int Nguyen = getResources().getInteger(R.integer.Nguyen);
 						int Niko = getResources().getInteger(R.integer.Niko);
