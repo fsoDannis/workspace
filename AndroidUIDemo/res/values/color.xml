@@ -1,7 +1,21 @@
 
 <resources>
-<drawable name="red">#7f00</drawable>
+   <drawable name="solid_black">#000</drawable>
+   <color name="solid_black">#000000</color>
+   <drawable name="solid_red">#7f00</drawable>
    <color name="solid_red">#ED1C24</color>
-
-    
+   <drawable name="orange">#ff6204</drawable>
+   <color name="orange">#ff6204</color>
+   <drawable name="green">#0a9d02</drawable>
+   <color name="green">#0a9d02</color>   
+   <drawable name="blue">#1004ff</drawable>
+   <color name="blue">#1004ff</color>   
+   <drawable name="indigo">#06fff0</drawable>
+   <color name="indigo">#06fff0</color>   
+   <drawable name="yellow">#fff004</drawable>
+   <color name="yellow">#fff004</color>   
+   <drawable name="violet">#8106ff</drawable>
+   <color name="violet">#8106ff</color>
+   <drawable name="white">#fff</drawable>
+   <color name="white">#fff</color>   
 </resources>

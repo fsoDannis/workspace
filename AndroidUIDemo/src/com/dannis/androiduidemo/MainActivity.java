@@ -3,6 +3,7 @@ package com.dannis.androiduidemo;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,15 +12,22 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
+import android.graphics.Color;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 public class MainActivity extends Activity {
 
 	LinearLayout ll;
 	LinearLayout.LayoutParams lp;
+	TextView tArray;
+
 	EditText et;
 	TextView tv;
 	TextView result;
 
+	Boolean addTextViewRed;
+	AlertDialog alert;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -27,67 +35,69 @@ public class MainActivity extends Activity {
 
 		ll = new LinearLayout(this);
 		ll.setOrientation(LinearLayout.VERTICAL);
+		ll.setBackgroundColor(getResources().getColor(R.color.solid_black));
 		lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
 		ll.setLayoutParams(lp);
-		
-		//Log.i("TEST", "TEST TEST TEST");
-		
+
 		
 		// Add a text view
-		tv = new TextView(this);
-		//tv.setText(R.string.hello_dan);
-		//tv.setText("Hi Dan...");
-		ll.addView(tv);
-		
+				tArray = new TextView(this);
+				//tv.setText(R.string.hello_dan);
+				//tArray.setText("");
+				ll.addView(tArray);
+				tArray.setBackgroundColor(getResources().getColor(R.color.white));	
+				
 		
 		//Add an Edit Field with a Hint
 		et = new EditText(this);
-		et.setHint("How much bucks you got?");
+		et.setHint("Enter the Hours Worked.");
+		et.setTextColor(getResources().getColor(R.color.white));
 		//ll.addView(et);
-		
+
 		//Add a button and set the text
 		Button b = new Button(this);
-		b.setText("Convert those Dollars!");
+		b.setText("Calculate");
 		//ll.addView(b);
 		b.setOnClickListener(new View.OnClickListener() {
 			
-			@Override
 			public void onClick(View v) {
 				//If Statement.. If Blank change hint color and message
 				String check = et.getText().toString();
 					if (check.length() <= 0){
 						et.setHintTextColor(getResources().getColor(R.color.solid_red));
-						et.setHint("You must enter a number");
+						et.setHint("You must enter a Number...");
 						
 					}else{
 				
-						int quarter = getResources().getInteger(R.integer.quarter);
-						int nickel = getResources().getInteger(R.integer.nickel);
-						int dime = getResources().getInteger(R.integer.dime);
-						int penny = getResources().getInteger(R.integer.penny);
+						int Jin = getResources().getInteger(R.integer.Jin);
+						int Nguyen = getResources().getInteger(R.integer.Nguyen);
+						int Niko = getResources().getInteger(R.integer.Niko);
+						int Nikita = getResources().getInteger(R.integer.Nikita);
 						
 						int entry = Integer.parseInt(et.getText().toString());
 								
-						int numQ = (100/quarter)*entry;
-						int numD = (100/dime)*entry;
-						int numN = (100/nickel)*entry;
-						int numP = (100/penny)*entry;
+						int payJin = Jin*entry;
+						int payNgu = Nguyen*entry;
+						int payNiko = Niko*entry;
+						int payNika = Nikita*entry;
 						
 						
-						result.setText("Quarters: " + numQ + "\r\n" +
-								"Dimes: " + numD + "\r\n" +
-								"Nickels: " + numN + "\r\n" +
-								"Pennies: " + numP + "\r\n"
+						result.setText("Jin earned: " + payJin + " Dollars"+"\r\n" +
+								"Nguyen earned: " + payNgu + " Dollars"+ "\r\n" +
+								"Niko earned: " + payNiko + " Dollars"+ "\r\n" +
+								"Nikita earned: " + payNika + " Dollars"+ "\r\n"
 								);
 					}}
 				});
+
 			
         // Loop of Characters
-        String[] characters = {"Ironman", "HawkEye", "The Hulk", "Captain America"};
+        String[] characters = {"\n" + getString(R.string.Jin),getString(R.string.Nguyen),getString(R.string.Niko),getString(R.string.Nikita)};
         int size = characters.length;
         for (int i=0; i<size; i++)
         {
-          tv.append((characters[i]+"\n"));
+          tArray.append((characters[i]+"\n"));
+          tArray.setGravity(Gravity.CENTER);
         }
 		
 
@@ -101,8 +111,9 @@ public class MainActivity extends Activity {
 		//Adding the edit Text and the Button to the layout
 		form.addView(et);
 		form.addView(b);
-		
+	
 		result = new TextView(this);
+		result.setTextColor(getResources().getColor(R.color.solid_red));
 		ll.addView(result);
 		
 		//Adding the form to the screen

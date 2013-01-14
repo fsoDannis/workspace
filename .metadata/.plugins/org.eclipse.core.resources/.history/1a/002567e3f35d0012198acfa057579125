@@ -1,0 +1,198 @@
+package com.dannis.androiduidemo;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.support.v4.app.NavUtils;
+import android.graphics.Color;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+
+public class MainActivity extends Activity {
+
+	LinearLayout ll;
+	LinearLayout.LayoutParams lp;
+	TextView r;
+	TextView o;
+	TextView y;
+	TextView g;
+	TextView b;
+	TextView i;
+	TextView v;
+	TextView tArray;
+
+	EditText et;
+	TextView tv;
+	TextView result;
+
+	Boolean addTextViewRed;
+	AlertDialog alert;
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		ll = new LinearLayout(this);
+		ll.setOrientation(LinearLayout.VERTICAL);
+		ll.setBackgroundColor(getResources().getColor(R.color.solid_black));
+		lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
+		ll.setLayoutParams(lp);
+		
+		
+		// Add a text view
+		tv = new TextView(this);
+		//tv.setText(R.string.hello_dan);
+		tv.setText("Check out all the colors of the rainbow! ");
+		ll.addView(tv);
+		tv.setBackgroundColor(getResources().getColor(R.color.white));	
+		
+
+		//TextView Colors
+		
+		// Add a text view
+		r = new TextView(this);
+		ll.addView(r);
+		r.setTextColor(getResources().getColor(R.color.white));
+		r.setHeight(20);
+		r.setGravity(Gravity.CENTER);
+		r.setBackgroundColor(getResources().getColor(R.color.solid_red));
+		
+		
+		o = new TextView(this);
+		ll.addView(o);
+		o.setTextColor(getResources().getColor(R.color.white));
+		o.setHeight(20);
+		o.setGravity(Gravity.CENTER);
+		o.setBackgroundColor(getResources().getColor(R.color.orange));
+		
+		y = new TextView(this);
+		ll.addView(y);
+		y.setTextColor(getResources().getColor(R.color.solid_black));
+		y.setHeight(20);
+		y.setGravity(Gravity.CENTER);
+		y.setBackgroundColor(getResources().getColor(R.color.yellow));
+		
+		g = new TextView(this);
+		ll.addView(g);
+		g.setTextColor(getResources().getColor(R.color.white));
+		g.setHeight(20);
+		g.setGravity(Gravity.CENTER);
+		g.setBackgroundColor(getResources().getColor(R.color.green));
+		
+		b = new TextView(this);
+		ll.addView(b);
+		b.setTextColor(getResources().getColor(R.color.white));
+		b.setHeight(20);
+		b.setGravity(Gravity.CENTER);
+		b.setBackgroundColor(getResources().getColor(R.color.blue));
+		
+		i = new TextView(this);
+		ll.addView(i);
+		i.setTextColor(getResources().getColor(R.color.solid_black));
+		i.setHeight(20);
+		i.setGravity(Gravity.CENTER);
+		i.setBackgroundColor(getResources().getColor(R.color.indigo));
+		
+		v = new TextView(this);
+		ll.addView(v);
+		v.setTextColor(getResources().getColor(R.color.white));
+		v.setHeight(20);
+		v.setGravity(Gravity.CENTER);
+		v.setBackgroundColor(getResources().getColor(R.color.violet));
+		
+		// Add a text view
+				tArray = new TextView(this);
+				//tv.setText(R.string.hello_dan);
+				//tArray.setText("");
+				ll.addView(tArray);
+				tArray.setBackgroundColor(getResources().getColor(R.color.white));	
+				
+		
+		//Add an Edit Field with a Hint
+		et = new EditText(this);
+		et.setHint("Enter the Hours Worked.");
+		et.setTextColor(getResources().getColor(R.color.white));
+		//ll.addView(et);
+
+		//Add a button and set the text
+		Button b = new Button(this);
+		b.setText("Calculate");
+		//ll.addView(b);
+		b.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				//If Statement.. If Blank change hint color and message
+				String check = et.getText().toString();
+					if (check.length() <= 0){
+						et.setHintTextColor(getResources().getColor(R.color.solid_red));
+						et.setHint("You must enter a Number...");
+						
+					}else{
+				
+						int Jin = getResources().getInteger(R.integer.Jin);
+						int Nguyen = getResources().getInteger(R.integer.Nguyen);
+						int Niko = getResources().getInteger(R.integer.Niko);
+						int Nikita = getResources().getInteger(R.integer.Nikita);
+						
+						int entry = Integer.parseInt(et.getText().toString());
+								
+						int payJin = Jin*entry;
+						int payNgu = Nguyen*entry;
+						int payNiko = Niko*entry;
+						int payNika = Nikita*entry;
+						
+						
+						result.setText("Jin earned: " + payJin + "Dollars"+"\r\n" +
+								"Nguyen earned: " + payNgu + "Dollars"+ "\r\n" +
+								"Niko earned: " + payNiko + "Dollars"+ "\r\n" +
+								"Nikita earned: " + payNika + "Dollars"+ "\r\n"
+								);
+					}}
+				});
+
+			
+        // Loop of Characters
+        String[] characters = {"Red", "Orange", "Yellow", "Green","Blue","Indigo","Violet"};
+        int size = characters.length;
+        for (int i=0; i<size; i++)
+        {
+          tArray.append((characters[i]+"\n"));
+        }
+		
+
+		
+		//Setting a Horizontal Layout
+		LinearLayout form = new LinearLayout(this);
+		form.setOrientation(LinearLayout.HORIZONTAL);
+		lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		form.setLayoutParams(lp);
+		
+		//Adding the edit Text and the Button to the layout
+		form.addView(et);
+		form.addView(b);
+	
+		result = new TextView(this);
+		ll.addView(result);
+		
+		//Adding the form to the screen
+		ll.addView(form);
+		
+		setContentView(ll);
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+
+}

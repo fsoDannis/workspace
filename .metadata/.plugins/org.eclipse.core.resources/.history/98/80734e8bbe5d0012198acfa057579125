@@ -1,0 +1,8 @@
+
+<resources>
+   <drawable name="solid_red">#7f00</drawable>
+   <color name="solid_red">#ED1C24</color>
+<drawable name="solid_black">#000</drawable>
+   <color name="solid_black">#000000</color>
+    
+</resources>

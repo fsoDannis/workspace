@@ -5,5 +5,10 @@
     <integer name="dime">10</integer>
  	<integer name="nickel">5</integer>
 	<integer name="penny">1</integer>
+	
+	<integer name="Jin">35</integer>
+    <integer name="Nguyen">10</integer>
+    <integer name="Niko">25</integer>
+    <integer name="Nikita">30</integer>
     
 </resources>
