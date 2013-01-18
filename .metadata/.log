@@ -5566,3 +5566,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2013-01-17 22:16:16.269
 !MESSAGE Failed to load properties file for project 'Java_Week2'
+
+!ENTRY org.eclipse.ui 4 4 2013-01-17 23:59:57.788
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.

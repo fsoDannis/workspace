@@ -9,16 +9,13 @@ import com.dannis.ecom.Money;
 import com.dannis.ecom.Phone;
 import com.dannis.ecom.Product;
 import com.dannis.lib.*;
-
 import android.app.Activity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.RadioGroup;
 
 public class MainActivity extends Activity {
 
@@ -28,10 +25,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		LinearLayout ll = new LinearLayout(this);
-		LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-		ll.setLayoutParams(lp);
-		ll.setOrientation(LinearLayout.VERTICAL);
-		
 		LinearLayout entryBox = formThings.singleEntryWithButton(this, "Type", "go");
 		
 		Button moneyButton = (Button) entryBox.findViewById(2);
@@ -65,14 +58,6 @@ public class MainActivity extends Activity {
 		products.add(new Phone("Nexus", 199.99));
 		products.add(new Phone("Samsung", 399.99));
 		
-		String[] productNames = new String[products.size()];
-		for(int i=0; i<products.size(); i++){
-			productNames[i] = products.get(i).getName();
-		}
-		
-		RadioGroup productOptions = formThings.getOptions(this, productNames);
-		
-		ll.addView(productOptions);
 		ll.addView(entryBox);
 		
 		setContentView(ll);
