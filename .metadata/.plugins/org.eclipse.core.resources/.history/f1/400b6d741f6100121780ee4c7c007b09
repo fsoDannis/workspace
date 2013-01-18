@@ -8,20 +8,17 @@ import android.widget.LinearLayout.LayoutParams;
 
 public class formThings {
 
-	public static LinearLayout singleEntryWithButton(Context context, String hint, String buttonText){
+	public static LinearLayout singleEntryWithButton(Context context){
 		
 		LinearLayout ll = new LinearLayout(context);
 		LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		ll.setLayoutParams(lp);
 		
 		EditText et = new EditText(context);
-		et.setHint(hint);
+		
 		
 		Button b = new Button(context);
-		b.setText(buttonText);
 		
-		ll.addView(et);
-		ll.addView(b);
 		
 		return ll;
 		
