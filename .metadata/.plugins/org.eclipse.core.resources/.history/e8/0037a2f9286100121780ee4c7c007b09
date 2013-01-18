@@ -2,11 +2,10 @@ package com.example.java_week2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import com.dannis.ecom.Phone;
+
 import android.os.Bundle;
 
 import com.dannis.ecom.Money;
-import com.dannis.ecom.Phone;
 import com.dannis.ecom.Product;
 import com.dannis.lib.*;
 import android.app.Activity;
@@ -52,11 +51,9 @@ public class MainActivity extends Activity {
 		});
 		
 		
-		ArrayList<Product> products = new ArrayList<Product>();
-		products.add(new Phone("iPhone 4S", 499.99));
+		ArrayList<Product> products;
 		products.add(new Phone("iPhone 5", 649.99));
-		products.add(new Phone("Nexus", 199.99));
-		products.add(new Phone("Samsung", 399.99));
+		
 		
 		ll.addView(entryBox);
 		
