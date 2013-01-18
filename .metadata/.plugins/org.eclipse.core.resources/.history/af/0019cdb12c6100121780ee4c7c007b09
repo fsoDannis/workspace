@@ -42,7 +42,6 @@ public class formThings {
 	for(int i=0; i<options.length; i++){
 		RadioButton rb = new RadioButton(context);
 		rb.setText(options[i]);
-		rb.setId(i+1);
 		boxes.addView(rb);
 	}
 	return boxes;
