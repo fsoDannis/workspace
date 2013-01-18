@@ -1,10 +1,6 @@
 package com.example.java_week2;
 
-import java.util.HashMap;
-
 import android.os.Bundle;
-
-import com.dannis.ecom.Money;
 import com.dannis.lib.*;
 import android.app.Activity;
 import android.util.Log;
@@ -33,18 +29,7 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				
 				EditText money = (EditText) v.getTag();
-				double moneyDouble = Double.parseDouble(money.getText().toString());
-				
-				HashMap<Money, Integer> change = Money.getChange(moneyDouble);
-				Log.i("BUTTON CLICKED: ", 
-						"Dollar: " + change.get(Money.DOLLAR) +"\r\n"+
-								"Quarter: " + change.get(Money.QUARTER) +"\r\n"+
-								"Dime: " + change.get(Money.DIME) +"\r\n"+
-								"Nickel: " + change.get(Money.NICKEL) +"\r\n"+
-								"Penny: " + change.get(Money.PENNY)
-
-						);
-				
+				Log.i("BUTTON CLICKED: ", money.getText().toString());
 			}
 		});
 		

@@ -24,8 +24,10 @@ public enum Money {
 			Money coin = coins[i];
 			int num = (int) Math.floor(left/coin.value);
 			left=left%coin.value;
-			change.put(coin, num);
+			
+			
 		}
+		
 		return change;
 	}
 }

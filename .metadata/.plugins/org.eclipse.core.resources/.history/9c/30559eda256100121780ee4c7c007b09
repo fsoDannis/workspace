@@ -26,6 +26,7 @@ public enum Money {
 			left=left%coin.value;
 			change.put(coin, num);
 		}
+		
 		return change;
 	}
 }
