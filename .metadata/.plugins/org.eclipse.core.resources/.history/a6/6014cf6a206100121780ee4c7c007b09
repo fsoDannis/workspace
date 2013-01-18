@@ -15,9 +15,7 @@ public class formThings {
 		ll.setLayoutParams(lp);
 		
 		EditText et = new EditText(context);
-		lp = new LayoutParams(0, LayoutParams.WRAP_CONTENT, 1.0f);
 		et.setHint(hint);
-		et.setLayoutParams(lp);
 		
 		Button b = new Button(context);
 		b.setText(buttonText);
