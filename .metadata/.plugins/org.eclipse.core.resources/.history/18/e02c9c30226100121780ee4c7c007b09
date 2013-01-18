@@ -24,7 +24,7 @@ public class formThings {
 		Button b = new Button(context);
 		b.setText(buttonText);
 		b.setId(2);
-		b.setTag(et);
+		
 		
 		
 		ll.addView(et);
