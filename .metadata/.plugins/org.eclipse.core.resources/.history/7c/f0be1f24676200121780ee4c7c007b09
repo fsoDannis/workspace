@@ -1,0 +1,57 @@
+package com.dannis.inventorymanager.models;
+
+public class InventoryItem implements com.dannis.inventorymanager.interfaces.InventoryItem {
+
+	
+	//-----------------------------------------------------------------------
+	//Private Fields
+	//-----------------------------------------------------------------------
+	private String _productName = "";
+	private double _price = 0.0;
+
+	//-----------------------------------------------------------------------
+	//Private Fields
+	//-----------------------------------------------------------------------
+	
+	@Override
+	public boolean setName(String name) {
+		this._productName = name;
+		return false;
+	}
+
+	@Override
+	public boolean setPrice(double price) {
+		this._price = price;
+		return false;
+	}
+
+	@Override
+	public boolean setQty(int qty) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getPrice() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getQty() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	@Override
+	public String toString(){
+		return "Product name: " + _productName + " Product Price" + String.valueOf(_price) + " Number on hand: 0"; 
+	}
+
+}

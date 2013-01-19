@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    tools:context=".MainActivity" >
+	<LinearLayout android:orientation="horizontal"
+	      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	  <TextView
+      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Product Name:"/>
+     <EditText
+        android:id="@+id/etProductName"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""/>
+	</LinearLayout>
+  <LinearLayout android:orientation="horizontal"
+	      android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	  <TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Product Price:"/>
+     <EditText
+        android:id="@+id/etProductPrice"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""/>
+	</LinearLayout>
+ <LinearLayout android:orientation="horizontal"
+	      android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	  <TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Number on Hand:"/>
+     <EditText
+        android:id="@+id/etProductQty"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text=""/>
+	</LinearLayout>
+
+ <Button
+     android:id="@+id/button1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Add to Inventory"
+     android:layout_marginLeft="20dip"
+     android:layout_marginRight="20dip" />
+	 
+</LinearLayout>

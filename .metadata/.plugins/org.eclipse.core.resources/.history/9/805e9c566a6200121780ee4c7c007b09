@@ -1,0 +1,67 @@
+package com.dannis.inventorymanager;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.util.Log;
+import android.view.Menu;
+import android.widget.TextView;
+
+import com.dannis.inventorymanager.models.InventoryItem;
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		
+		InventoryItem nikeShoe = new InventoryItem();
+		nikeShoe.setName("AirMax");
+		nikeShoe.setPrice(119.99);
+		nikeShoe.setQty(10);
+		
+		InventoryItem newBal = new InventoryItem();
+		nikeShoe.setName("Trek");
+		nikeShoe.setPrice(119.99);
+		nikeShoe.setQty(20);
+		
+		InventoryItem adidas = new InventoryItem();
+		nikeShoe.setName("Fast");
+		nikeShoe.setPrice(319.99);
+		nikeShoe.setQty(4);
+		
+		InventoryItem puma = new InventoryItem();
+		nikeShoe.setName("Tiger");
+		nikeShoe.setPrice(9.99);
+		nikeShoe.setQty(300);
+		
+		ArrayList<InventoryItem> inventoryCollection = new ArrayList<InventoryItem>();
+		inventoryCollection.add(nikeShoe);
+		inventoryCollection.add(newBal);
+		inventoryCollection.add(adidas);
+		inventoryCollection.add(puma);
+		
+		
+		
+		
+		TextView thisText = (TextView)findViewById(R.id.tvTest);
+		thisText.setText(nikeShoe.toString());
+		Log.i("Dannis",nikeShoe.toString());
+		
+		
+		
+		
+		
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+
+}
