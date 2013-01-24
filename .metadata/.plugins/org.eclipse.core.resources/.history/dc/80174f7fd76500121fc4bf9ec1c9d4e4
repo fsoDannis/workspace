@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 		//DETECT NETWORK CONNECTION
 		connected = webStuff.getConnectionStatus(_context);
 		if(connected){
-			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context));
+			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context);
 		}
 		
 		//ADD PLACES DISPLAY

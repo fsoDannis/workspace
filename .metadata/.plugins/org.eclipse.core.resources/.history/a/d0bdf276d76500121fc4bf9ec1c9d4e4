@@ -1,7 +1,5 @@
 package com.dannis.findit;
 
-import com.dannis.lib.webStuff;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
@@ -19,7 +17,6 @@ public class MainActivity extends Activity {
 	searchForm _search;
 	placesDisplay _places;
 	favDisplay _favorites;
-	boolean connected = false;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +41,6 @@ public class MainActivity extends Activity {
 		
 			}
 		});
-		
-		//DETECT NETWORK CONNECTION
-		connected = webStuff.getConnectionStatus(_context);
-		if(connected){
-			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context));
-		}
 		
 		//ADD PLACES DISPLAY
 		_places = new placesDisplay(_context);
