@@ -1,0 +1,21 @@
+package com.dannis.findit;
+
+import android.content.Context;
+import android.widget.GridLayout;
+import android.widget.TextView;
+
+public class placesDisplay extends GridLayout{
+
+	TextView _businessName;
+	TextView _addresss;
+	TextView _phoneNumber;
+	TextView _location;
+
+	
+	
+	
+	
+	public placesDisplay(Context context){
+		super(context);
+	}
+}

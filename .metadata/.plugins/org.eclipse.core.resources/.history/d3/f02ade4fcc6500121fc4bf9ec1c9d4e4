@@ -1,0 +1,57 @@
+package com.dannis.findit;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Context;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.view.View.OnClickListener;
+
+public class MainActivity extends Activity {
+
+	Context _context;
+	LinearLayout _appLayout;
+	searchForm _search;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		_context = this;
+		_appLayout = new LinearLayout(this);
+		
+		//Creating the Search Bar.. and the Go Button
+		 _search = new searchForm(_context, "Enter a Place...","find it!");
+		
+		//Add Search Handler
+		EditText searchField = _search.getField();
+		Button searchButton = _search.getButton();
+		
+		searchButton.setOnClickListener(new OnClickListener() {
+	
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Log.i("Click Handler",_search.getField().getText().toString());
+		
+			}
+		});
+		
+		_appLayout.addView(_search);
+		
+		
+		setContentView(_appLayout);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		return true;
+	}
+
+}

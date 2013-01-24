@@ -1,0 +1,13 @@
+package com.dannis.findit;
+
+import android.content.Context;
+import android.widget.LinearLayout;
+
+public class favDisplay extends LinearLayout{
+
+	
+	public favDisplay(Context context){
+		super(context);
+		
+	}
+}

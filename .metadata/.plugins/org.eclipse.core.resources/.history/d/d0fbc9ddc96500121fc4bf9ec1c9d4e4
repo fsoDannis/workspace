@@ -1,0 +1,12 @@
+package com.dannis.findit;
+
+import android.content.Context;
+import android.widget.LinearLayout;
+
+public class searchForm extends LinearLayout{
+	
+	public searchForm(Context context){
+		super(context);
+	}
+
+}

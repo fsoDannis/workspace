@@ -1,0 +1,20 @@
+package com.dannis.findit;
+
+import android.content.Context;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
+
+public class favDisplay extends LinearLayout{
+
+	Button _add;
+	Button _remove;
+	Spinner _list;
+	
+	
+	
+	public favDisplay(Context context){
+		super(context);
+		
+	}
+}
