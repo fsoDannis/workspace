@@ -1,6 +1,5 @@
 package com.dannis.findit;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
@@ -121,16 +120,6 @@ public class MainActivity extends Activity {
 			qs =URLEncoder.encode(yql,"UTF-8");
 		}catch (Exception e){
 			Log.e("Bad URL","ENCODING PROBLEM");
-			qs="";
-		}
-		URL finalURL;
-		try{
-			finalURL = new URL(baseURl +"?q="+ qs + "*format=json");
-			QuoteRequest qr=new QuoteRequest();
-			qr.execute(finalURL);
-		}catch (MalformedURLException e){
-			Log.e("BAD URL","MALFORMED URL");
-			finalURL =null;
 		}
 	}
 
@@ -145,7 +134,7 @@ public class MainActivity extends Activity {
 		}
 		@Override
 		protected void onPostExecute(String result){
-			Log.i("URL RESPONSE", result);
+			
 		}
 	}
 }

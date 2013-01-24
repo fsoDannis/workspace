@@ -7,10 +7,10 @@ import android.widget.TextView;
 public class placesDisplay extends GridLayout{
 
 	//Setting the textview Placeholders for the values
-	TextView _title;
+	TextView _businessName;
 	TextView _address;
-	TextView _phone;
-	TextView _distance;
+	TextView _phoneNumber;
+	TextView _location;
 	Context _context;
 	
 	public placesDisplay(Context context){
@@ -23,7 +23,7 @@ public class placesDisplay extends GridLayout{
 		//SETTING THE LABELS AND THE PLACEHOLDERS FOR CONTENT
 		TextView businessNameLabel = new TextView(_context);
 		businessNameLabel.setText("Business Name: ");
-		_title = new TextView(context);
+		_businessName = new TextView(context);
 		
 		TextView addressLabel = new TextView(_context);
 		addressLabel.setText("Address: ");
@@ -31,20 +31,20 @@ public class placesDisplay extends GridLayout{
 		
 		TextView phoneNumberLabel = new TextView(_context);
 		phoneNumberLabel.setText("Phone Number: ");
-		_phone = new TextView(context);
+		_phoneNumber = new TextView(context);
 		
 		TextView locationLabel = new TextView(_context);
 		locationLabel.setText("Location: ");
-		_distance = new TextView(context);
+		_location = new TextView(context);
 		
 		this.addView(businessNameLabel);
-		this.addView(_title);
+		this.addView(_businessName);
 		this.addView(addressLabel);
 		this.addView(_address);
 		this.addView(phoneNumberLabel);
-		this.addView(_phone);
+		this.addView(_phoneNumber);
 		this.addView(locationLabel);
-		this.addView(_distance);
+		this.addView(_location);
 		
 		
 	}

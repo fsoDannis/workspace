@@ -35,8 +35,6 @@ public class webStuff {
 		}
 	}
 	
-	
-	//ASSUMING API RETURNS A STRING FROM A URL (IE YAHOO YQL)
 	public static String getURLStringResponse(URL url){
 		String response ="";
 		

@@ -126,8 +126,6 @@ public class MainActivity extends Activity {
 		URL finalURL;
 		try{
 			finalURL = new URL(baseURl +"?q="+ qs + "*format=json");
-			QuoteRequest qr=new QuoteRequest();
-			qr.execute(finalURL);
 		}catch (MalformedURLException e){
 			Log.e("BAD URL","MALFORMED URL");
 			finalURL =null;
@@ -145,7 +143,7 @@ public class MainActivity extends Activity {
 		}
 		@Override
 		protected void onPostExecute(String result){
-			Log.i("URL RESPONSE", result);
+			
 		}
 	}
 }
