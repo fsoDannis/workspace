@@ -160,7 +160,7 @@ public class MainActivity extends Activity {
 					Toast toast= Toast.makeText(_context,"Valid Entry" + results.getString("place"), Toast.LENGTH_SHORT);
 					toast.show();
 				}*/
-				Log.i("JSON RESULTS",results.toString());
+				Log.i("JSON RESULTS",results.getString("place"));
 			}catch (JSONException e){
 				Log.e("JSON","JSON OBJECT EXCEPTION");
 			}

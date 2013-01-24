@@ -152,8 +152,8 @@ public class MainActivity extends Activity {
 			Log.i("URL RESPONSE", result);
 			try{
 				JSONObject json = new JSONObject(result);
-				JSONObject results=json.getJSONObject("query").getJSONObject("results");
-			/*	if(results.getString("Result")==null){
+				JSONObject results=json.getJSONObject("query");
+				/*if(results.getString("count").compareTo("0")==0){
 					Toast toast= Toast.makeText(_context,"Invalid Entry", Toast.LENGTH_SHORT);
 					toast.show();
 				}else{
