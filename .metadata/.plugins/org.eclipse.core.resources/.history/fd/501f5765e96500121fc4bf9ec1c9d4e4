@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
 		String yql = "select * from local.search where zip='45103' and query="+ place + "";
 		String qs;
 		try{
-			qs =URLEncoder.encode(yql,"UTF-8");
+			qs =URLEncoder.encode(yql);
 		}catch (Exception e){
 			Log.e("Bad URL","ENCODING PROBLEM");
 			qs="";
