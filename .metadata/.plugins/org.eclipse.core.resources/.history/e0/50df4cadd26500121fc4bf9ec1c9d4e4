@@ -3,16 +3,11 @@ package com.dannis.findit;
 import java.util.ArrayList;
 
 import android.content.Context;
-import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-
-
+import android.widget.LinearLayout.LayoutParams;
 
 public class favDisplay extends LinearLayout{
 
@@ -20,7 +15,7 @@ public class favDisplay extends LinearLayout{
 	Button _remove;
 	Spinner _list;
 	Context _context;
-	ArrayList<String> _places = new ArrayList<String>();
+	ArrayList<String> _places;
 	
 	
 	public favDisplay(Context context){
@@ -29,7 +24,6 @@ public class favDisplay extends LinearLayout{
 		
 		LayoutParams lp;
 	
-		_places.add("Select a Favorite Place");
 		_list = new Spinner(_context);
 		lp = new LayoutParams(0,LayoutParams.WRAP_CONTENT,1.0f);
 		_list.setLayoutParams(lp);
@@ -38,21 +32,6 @@ public class favDisplay extends LinearLayout{
 		ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(_context, android.R.layout.simple_spinner_dropdown_item, _places);
 		listAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 		_list.setAdapter(listAdapter);
-		_list.setOnItemSelectedListener(new OnItemSelectedListener() {
-			
-			@Override
-			public void onItemSelected(AdapterView<?> parent, View v, int pos, long id){
-				Log.i("FAVORITE SELECTED",parent.getItemAtPosition(pos).toString());
-			}
-			
-			@Override
-			public void onNothingSelected(AdapterView<?> parent){
-				Log.i("FAVORITE SELECTED","NONE");
-				
-			}
-		});
-		
-		updateFavorites();
 		
 		_add = new Button (_context);
 		_add.setText("+");
@@ -68,9 +47,8 @@ public class favDisplay extends LinearLayout{
 		this.setLayoutParams(lp);
 	
 	}
-	//Setting up the content for the list.
+	
 	private void updateFavorites(){
-		_places.add("Apple Store");
 		_places.add("Home");
 		_places.add("Time Warner");
 		_places.add("Parent's House");

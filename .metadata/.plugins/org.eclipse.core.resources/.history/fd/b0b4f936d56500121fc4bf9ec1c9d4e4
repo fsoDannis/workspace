@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.util.Log;
-import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.LinearLayout.LayoutParams;
 
 
 
@@ -42,12 +42,11 @@ public class favDisplay extends LinearLayout{
 			
 			@Override
 			public void onItemSelected(AdapterView<?> parent, View v, int pos, long id){
-				Log.i("FAVORITE SELECTED",parent.getItemAtPosition(pos).toString());
+				Log.i("FAVORITE SELECTED",parent.getItemAtPosition(pos).toString())
 			}
 			
 			@Override
 			public void onNothingSelected(AdapterView<?> parent){
-				Log.i("FAVORITE SELECTED","NONE");
 				
 			}
 		});

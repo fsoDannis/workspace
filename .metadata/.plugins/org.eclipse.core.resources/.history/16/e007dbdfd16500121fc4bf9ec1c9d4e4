@@ -26,7 +26,7 @@ public class searchForm extends LinearLayout{
 		this.addView(_searchField);
 		this.addView(_searchButton);
 		
-		// Spreading the View all the way across the screen
+		// Spreading the View all the way accross the scren
 		lp = new LayoutParams(LayoutParams.MATCH_PARENT,LayoutParams.WRAP_CONTENT);
 		this.setLayoutParams(lp);
 		
