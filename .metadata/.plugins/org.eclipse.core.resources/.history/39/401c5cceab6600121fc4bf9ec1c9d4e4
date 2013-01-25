@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
 		Log.i("HISTORY READ", _history.toString());
 		
 		//CREATING THE SEARCH BAR & BUTTON
-		 _search = new searchForm(_context, "Enter a Place...","Find it!");
+		 _search = new searchForm(_context, "Enter a Place...","Find me the Closest");
 		
 		//ADDING SEARCH HANDLER
 		Button searchButton = _search.getButton();
