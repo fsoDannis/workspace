@@ -140,12 +140,12 @@ public class MainActivity extends Activity {
 					Toast toast= Toast.makeText(_context,"Invalid Entry", Toast.LENGTH_SHORT);
 					toast.show();
 				}else{
-					Toast toast= Toast.makeText(_context,"Valid Entry: " + title, Toast.LENGTH_SHORT);
+					Toast toast= Toast.makeText(_context,"Valid Entry:" + title, Toast.LENGTH_SHORT);
 					toast.show();
 					//Writing to the hardDrive
-					_history.put(ja.getJSONObject(0).getString("Title"), ja.getJSONObject(0).toString());
+					_history.put(ja.getJSONObject(0).getString("Title"), ja.toString());
 					fileStuff.storeObjectFile(_context, "history", _history, false);
-					fileStuff.storeStringFile(_context, "temp", ja.getJSONObject(0).toString(), true);
+					fileStuff.storeStringFile(_context, "temp", ja.toString(), false);
 				}
 		
 				Log.i("JSON RESULTS","Name:" + title.toString()+" Address:" + address.toString()+" Phone:"+ phone.toString());
