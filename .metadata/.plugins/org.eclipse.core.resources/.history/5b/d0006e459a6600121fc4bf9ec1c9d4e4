@@ -161,16 +161,14 @@ public class MainActivity extends Activity {
 				JSONObject results = json.getJSONObject("query").getJSONObject("results");
 				JSONArray ja = results.getJSONArray("Results");*/
 				//String list = ja.getJSONObject(0).getString("Title");
-				
-				/*if(list.getString("id").compareTo("N/A")==0){
+				if(list.getString("id").compareTo("N/A")==0){
 					Toast toast= Toast.makeText(_context,"Invalid Entry", Toast.LENGTH_SHORT);
 					toast.show();
 				}else{
-					Toast toast= Toast.makeText(_context,"Valid Entry" + list.substring("place"), Toast.LENGTH_SHORT);
+					Toast toast= Toast.makeText(_context,"Valid Entry" + list.getString("place"), Toast.LENGTH_SHORT);
 					toast.show();
-				}*/
-				
-				Log.i("JSON RESULTS",list.toString());
+				}
+				Log.i("JSON RESULTS",ja.toString());
 			}catch (JSONException e){
 				Log.e("JSON","JSON OBJECT EXCEPTION");
 			}
