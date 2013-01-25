@@ -126,20 +126,20 @@ public class MainActivity extends Activity {
 				JSONObject results = query.getJSONObject("results");
 				JSONArray ja = results.getJSONArray("Result");
 				
-				String queryCount= query.getString("count");
 				String title = ja.getJSONObject(0).getString("Title");
 				String address = ja.getJSONObject(0).getString("Address");
 				String phone = ja.getJSONObject(0).getString("Phone");
 				
-				//THIS LITTLE TOAST GUY HATES ME CANNOT GET THE "NOT" PART WORKING
-				if(queryCount.length()== 0){
+				//THIS LITTLE TOAST GUY HATES ME!
+				if(query.getString("count").compareTo("0")==0){
 					Toast toast= Toast.makeText(_context,"Invalid Entry", Toast.LENGTH_SHORT);
 					toast.show();
 				}else{
-					Toast toast= Toast.makeText(_context,"Valid Entry: Result=" + title, Toast.LENGTH_SHORT);
+					Toast toast= Toast.makeText(_context,"Valid Entry" + title, Toast.LENGTH_SHORT);
 					toast.show();
 				}
-		
+				
+				//ja.getJSONObject(0).getString("Title");
 				Log.i("JSON RESULTS","Name:" + title.toString()+" Address:" + address.toString()+" Phone:"+ phone.toString());
 			}catch (JSONException e){
 				Log.e("JSON","JSON OBJECT EXCEPTION");
