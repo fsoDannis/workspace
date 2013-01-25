@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 		_context = this;
 		_appLayout = new LinearLayout(this);
 		_history = getHistory();
-		Log.i("HISTORY READ", _history.toString());
+		Log.i("HISTORY READ", _history.toSting());
 		
 		//CREATING THE SEARCH BAR & BUTTON
 		 _search = new searchForm(_context, "Enter a Place...","Find me the Closest");
