@@ -34,7 +34,7 @@ public class placesDisplay extends GridLayout{
 		_phone = new TextView(context);
 		
 		TextView locationLabel = new TextView(_context);
-		locationLabel.setText("Distance: ");
+		locationLabel.setText("Location: ");
 		_distance = new TextView(context);
 		
 		this.addView(businessNameLabel);
