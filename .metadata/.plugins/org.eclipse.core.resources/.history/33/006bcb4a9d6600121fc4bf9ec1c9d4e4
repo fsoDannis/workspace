@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
 				String address = ja.getJSONObject(0).getString("Address");
 				String phone = ja.getJSONObject(0).getString("Phone");
 				//THIS LITTLE TOAST GUY HATES ME!
-				/*	if(query.getString("count").compareTo("0")==0){
+				/*	if(list.getString("id").compareTo("N/A")==0){
 					Toast toast= Toast.makeText(_context,"Invalid Entry", Toast.LENGTH_SHORT);
 					toast.show();
 				}else{
