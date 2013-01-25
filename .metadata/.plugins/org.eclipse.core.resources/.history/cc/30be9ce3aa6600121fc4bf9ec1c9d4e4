@@ -111,7 +111,7 @@ public class fileStuff {
 			fin.close();
 		}catch(FileNotFoundException e){
 			Log.e("READ ERROR", "FILE NOT FOUND" + filename);
-			return null;
+			
 		}catch(IOException e){
 			Log.e("I/O ERROR", "FILE NOT FOUND" + filename);
 		}

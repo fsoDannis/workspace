@@ -34,17 +34,16 @@ public class MainActivity extends Activity {
 	boolean connected = false;
 	HashMap<String, String> _history;
 	
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
 		_context = this;
 		_appLayout = new LinearLayout(this);
-		_history = getHistory();
+		_history = new HashMap<String, String>();
 		
 		//CREATING THE SEARCH BAR & BUTTON
-		 _search = new searchForm(_context, "Enter a Place...","Find me the Closest");
+		 _search = new searchForm(_context, "Enter a Place...","find it!");
 		
 		//ADDING SEARCH HANDLER
 		Button searchButton = _search.getButton();
@@ -75,8 +74,7 @@ public class MainActivity extends Activity {
 		//ADDING VIEWS TO THE MAIN LAYOUT
 		_appLayout.addView(_search);
 		_appLayout.addView(_places);
-		//Not showing the Display atm
-		//_appLayout.addView(_favorites);
+		_appLayout.addView(_favorites);
 
 		
 		_appLayout.setOrientation(LinearLayout.VERTICAL);
@@ -113,21 +111,7 @@ public class MainActivity extends Activity {
 			finalURL =null;
 		}
 	}
-	@SuppressWarnings("unchecked")
-	private HashMap<String,String> getHistory(){
-		Object stored = fileStuff.readObjectFile(_context, "history", false);
-		
-		HashMap<String, String> history;
-		if(stored == null){
-			Log.i("HISTORY","No History file found");
-			history = new HashMap<String, String>();
-		}else{
-			history = (HashMap<String, String>) stored;
-		}
-		return history;
-	}
-	
-	
+
 	private class QuoteRequest extends AsyncTask<URL, Void, String>{
 		@Override
 		protected String doInBackground(URL... urls){
@@ -150,7 +134,6 @@ public class MainActivity extends Activity {
 				String title = ja.getJSONObject(0).getString("Title");
 				String address = ja.getJSONObject(0).getString("Address");
 				String phone = ja.getJSONObject(0).getString("Phone");
-				String distance = ja.getJSONObject(0).getString("Distance");
 				
 				//THIS LITTLE TOAST GUY HATES ME CANNOT GET THE "NOT" PART WORKING
 				if(queryCount.length()== 0){
@@ -163,17 +146,14 @@ public class MainActivity extends Activity {
 					_history.put(ja.getJSONObject(0).getString("Title"), ja.getJSONObject(0).toString());
 					fileStuff.storeObjectFile(_context, "history", _history, false);
 					fileStuff.storeStringFile(_context, "temp", ja.getJSONObject(0).toString(), true);
-					_places._title.setText(title);	
-					_places._address.setText(address);	
-					_places._phone.setText(phone);	
-					_places._distance.setText(distance + "Miles Away");
 				}
 		
 				Log.i("JSON RESULTS","Name:" + title.toString()+" Address:" + address.toString()+" Phone:"+ phone.toString());
 			}catch (JSONException e){
 				Log.e("JSON","JSON OBJECT EXCEPTION");
 			}
-	
+			
+			
 		}
 	}
 }

@@ -6,8 +6,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 import android.content.Context;
@@ -56,7 +54,7 @@ public class fileStuff {
 		}
 		return true;
 		}
-	@SuppressWarnings("resource")
+	
 	public static String readStringFile(Context context, String filename, Boolean external){
 		String content = "";
 		try{
@@ -88,34 +86,4 @@ public class fileStuff {
 		}
 		return content;
 	}
-	@SuppressWarnings("resource")
-	public static Object readObjectFile(Context context, String filename, Boolean external){
-		Object content = new Object();
-		try{
-			File file;
-			FileInputStream fin;
-			if(external){
-				file = new File(context.getExternalFilesDir(null), filename);
-				fin = new FileInputStream(file);
-			}else{
-				file = new File(filename);
-				fin = context.openFileInput(filename);
-				}
-			ObjectInputStream ois = new ObjectInputStream(fin);
-			try{
-				content = (Object) ois.readObject();
-			}catch (ClassNotFoundException e){
-				Log.e("READ ERROR", "INVALID OBJECT FILE");
-			}
-			ois.close();
-			fin.close();
-		}catch(FileNotFoundException e){
-			Log.e("READ ERROR", "FILE NOT FOUND" + filename);
-			return null;
-		}catch(IOException e){
-			Log.e("I/O ERROR", "FILE NOT FOUND" + filename);
-		}
-		return content;
-	}
-	
 }

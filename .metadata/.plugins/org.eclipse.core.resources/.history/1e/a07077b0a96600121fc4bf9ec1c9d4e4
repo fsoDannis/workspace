@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 		
 		_context = this;
 		_appLayout = new LinearLayout(this);
-		_history = getHistory();
+		_history = new HashMap<String, String>();
 		
 		//CREATING THE SEARCH BAR & BUTTON
 		 _search = new searchForm(_context, "Enter a Place...","Find me the Closest");
@@ -113,21 +113,7 @@ public class MainActivity extends Activity {
 			finalURL =null;
 		}
 	}
-	@SuppressWarnings("unchecked")
-	private HashMap<String,String> getHistory(){
-		Object stored = fileStuff.readObjectFile(_context, "history", false);
-		
-		HashMap<String, String> history;
-		if(stored == null){
-			Log.i("HISTORY","No History file found");
-			history = new HashMap<String, String>();
-		}else{
-			history = (HashMap<String, String>) stored;
-		}
-		return history;
-	}
-	
-	
+
 	private class QuoteRequest extends AsyncTask<URL, Void, String>{
 		@Override
 		protected String doInBackground(URL... urls){
