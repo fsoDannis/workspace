@@ -8,6 +8,8 @@
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="This is the Second Activity" />
+        android:gravity="center_vertical|center_horizontal"
+        android:text="This is the Second Activity" 
+        android:textSize="20sp"/>
 
 </LinearLayout>

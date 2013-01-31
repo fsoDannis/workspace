@@ -1,13 +1,17 @@
 package com.example.lyndatutorials;
 
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class Main extends Activity {
 
@@ -17,7 +21,18 @@ public class Main extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		Button B = (Button) findViewById(R.id.b_Enter);
+		B.setBackgroundColor(Color.WHITE);
+		B.setTextColor(Color.BLACK);
+		
 		final EditText et = (EditText) findViewById(R.id.et_EnterName);
+		et.setTextColor(Color.WHITE);
+		//ImageView iv = (ImageView) findViewById(R.drawable.newbg);
+	
+		
+		/*  Getting Image from the Gallery
+		ImageView iv = (ImageView) findViewById(R.id.imageView1);
+		iv.setImageURI ( (Uri) getIntent().getExtras().get(Intent.EXTRA_STREAM));
+		*/
 		
 		
 		//Sending the information from the Edit Box through the button and onto the next screen
