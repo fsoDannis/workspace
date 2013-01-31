@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.dannis.findit.R;
 import com.dannis.lib.fileStuff;
 import com.dannis.lib.webStuff;
 
@@ -16,6 +17,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -38,7 +40,9 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.splash);
 		
+
 		_context = this;
 		_appLayout = new LinearLayout(this);
 		_history = getHistory();
@@ -58,6 +62,7 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				Log.i("USER TYPED:",_search.getField().getText().toString());
 				getPlace(_search.getField().getText().toString());
+				
 			}
 		});
 		
@@ -81,6 +86,7 @@ public class MainActivity extends Activity {
 
 		
 		_appLayout.setOrientation(LinearLayout.VERTICAL);
+		
 		
 		setContentView(_appLayout);
 	}
