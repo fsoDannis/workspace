@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
-<window height="855" width="1413" x="10" y="24">
+<window height="855" width="1413" x="-1" y="53">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="269"/>
@@ -30,7 +30,7 @@
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="242" y="22"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="264" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -39,7 +39,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1329267197192" focus="true" label="Workspace - &lt;JavaScript&gt;">
+<page aggregateWorkingSetId="Aggregate for window 1329267197192" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -50,33 +50,28 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" partName="Product.java" path="/Users/Dannis/Documents/workspace/Java_Week2/src/com/dannis/ecom/Product.java" title="Product.java" tooltip="Java_Week2/src/com/dannis/ecom/Product.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Java_Week2/src/com/dannis/ecom/Product.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="233" selectionOffset="55" selectionTopPixel="0"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="second.xml" partName="second.xml" path="/Users/Dannis/Documents/workspace/findIt_3/res/layout/second.xml" title="second.xml" tooltip="findIt_3/res/layout/second.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/findIt_3/res/layout/second.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventoryItem.java" partName="InventoryItem.java" path="/Users/Dannis/Documents/workspace/inventoryManager/src/com/dannis/inventorymanager/interfaces/InventoryItem.java" title="InventoryItem.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/interfaces/InventoryItem.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/inventoryManager/src/com/dannis/inventorymanager/interfaces/InventoryItem.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="481" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="placesDisplay.java" partName="placesDisplay.java" path="/Users/Dannis/Documents/workspace/findIt/src/com/dannis/findit/placesDisplay.java" title="placesDisplay.java" tooltip="findIt/src/com/dannis/findit/placesDisplay.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/findIt/src/com/dannis/findit/placesDisplay.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventoryItem.java" partName="InventoryItem.java" path="/Users/Dannis/Documents/workspace/inventoryManager/src/com/dannis/inventorymanager/models/InventoryItem.java" title="InventoryItem.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/models/InventoryItem.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/inventoryManager/src/com/dannis/inventorymanager/models/InventoryItem.java"/>
-<editorState selectionHorizontalPixel="17" selectionLength="0" selectionOffset="1269" selectionTopPixel="93"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/Users/Dannis/Documents/workspace/findIt/src/com/dannis/findit/MainActivity.java" title="MainActivity.java" tooltip="findIt/src/com/dannis/findit/MainActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/findIt/src/com/dannis/findit/MainActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="3171" selectionOffset="2272" selectionTopPixel="2343"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" partName="MainActivity.java" path="/Users/Dannis/Documents/workspace/inventoryManager/src/com/dannis/inventorymanager/MainActivity.java" title="MainActivity.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/MainActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/inventoryManager/src/com/dannis/inventorymanager/MainActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="580" selectionOffset="778" selectionTopPixel="348"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Second_Activity.java" partName="Second_Activity.java" path="/Users/Dannis/Documents/workspace/findIt_3/src/com/example/findit_3/Second_Activity.java" title="Second_Activity.java" tooltip="findIt_3/src/com/example/findit_3/Second_Activity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/findIt_3/src/com/example/findit_3/Second_Activity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5424" selectionTopPixel="2045"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemType.java" partName="ItemType.java" path="/Users/Dannis/Documents/workspace/inventoryManager/src/com/dannis/inventorymanager/models/ItemType.java" title="ItemType.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/models/ItemType.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/inventoryManager/src/com/dannis/inventorymanager/models/ItemType.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="111" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" partName="activity_main.xml" path="/Users/Dannis/Documents/workspace/inventoryManager/res/layout/activity_main.xml" title="activity_main.xml" tooltip="inventoryManager/res/layout/activity_main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/inventoryManager/res/layout/activity_main.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="webStuff.java" partName="webStuff.java" path="/Users/Dannis/Documents/workspace/findIt_3/src/com/example/lib/webStuff.java" title="webStuff.java" tooltip="findIt_3/src/com/example/lib/webStuff.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/findIt_3/src/com/example/lib/webStuff.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="27" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -107,14 +102,23 @@
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
 <viewState/>
 </view>
-<view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer"/>
-<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics"/>
+<view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.resourceField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (4 items)"/>
+<category IMemento.internal.id="Warnings (27 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="65" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="655"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="181" org.eclipse.ui.ide.resourceField="126" org.eclipse.ui.ide.severityAndDescriptionField="655"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -124,7 +128,9 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
@@ -150,14 +156,18 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control"/>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="&lt;JavaScript&gt;">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -179,6 +189,7 @@
 <alwaysOnActionSet id="adt.actionSet.refactorings"/>
 <alwaysOnActionSet id="adt.actionSet.avdManager"/>
 <alwaysOnActionSet id="adt.actionSet.lint"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.jdt.ui.SourceView"/>
@@ -220,44 +231,64 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.StructureView" label="LabelNotFound"/>
 <page content="org.eclipse.wb.core.PaletteView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="762" ratioRight="254" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.18993995" ratioLeft="253" ratioRight="1079" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74963397" ratioLeft="512" ratioRight="171" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<info folder="true" part="bottom" ratio="0.64015645" ratioLeft="491" ratioRight="276" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4e19e97b" ratio="0.7493438" ratioLeft="571" ratioRight="191" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4e19e97b" ratio="0.7493438" ratioLeft="571" ratioRight="191" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.5" ratioLeft="256" ratioRight="256" relationship="4" relative="org.eclipse.ui.internal.ViewStack@4e19e97b">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<info folder="true" part="right" ratio="0.5" ratioLeft="256" ratioRight="256" relationship="4" relative="org.eclipse.ui.internal.ViewStack@4e19e97b">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
@@ -531,14 +562,14 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
-<view id="com.android.ide.eclipse.ddms.views.DeviceView"/>
 <view id="com.android.ide.eclipse.ddms.views.ThreadView"/>
 <view id="com.android.ide.eclipse.ddms.views.HeapView"/>
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView"/>
 <view id="com.android.ide.eclipse.ddms.views.NetworkStatsView"/>
 <view id="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -558,7 +589,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="logcat" ratio="0.7988981" ratioLeft="580" ratioRight="146" relationship="4" relative="devices">
+<info folder="true" part="logcat" ratio="0.55280316" ratioLeft="424" ratioRight="343" relationship="4" relative="devices">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
@@ -569,7 +600,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.29962546" ratioLeft="400" ratioRight="935" relationship="2" relative="devices"/>
 <info folder="true" part="ddms-detail" ratio="0.49946523" ratioLeft="467" ratioRight="468" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="com.android.ide.eclipse.ddms.views.ThreadView" appearance="2" expanded="2">
+<folder activePageID="com.android.ide.eclipse.ddms.views.NetworkStatsView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
 <page content="com.android.ide.eclipse.ddms.views.HeapView" label="Heap"/>
 <page content="com.android.ide.eclipse.ddms.views.AllocTrackerView" label="Allocation Tracker"/>
@@ -594,152 +625,144 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Java_Week2/src/com/dannis/ecom/Money.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/inventoryManager/res/layout/activity_main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/inventoryManager/src/com/dannis/inventorymanager/models/InventoryItem.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/inventoryManager/src/com/dannis/inventorymanager/MainActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/inventoryManager/src/com/dannis/inventorymanager/models/ItemType.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/inventoryManager/res/layout/activity_main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/findIt_3/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/findIt_3/res/layout/second.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/findIt_3/src/com/example/lib/fileStuff.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/findIt_3/src/com/example/lib/webStuff.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/findIt/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/findIt/src/com/dannis/findit/placesDisplay.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/findIt/src/com/dannis/findit/MainActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/findIt_3/src/com/example/findit_3/Second_Activity.java"/>
 </editors>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
+<item historyLabel="findIt_3 Manifest" index="0"/>
+<item historyLabel="findIt Manifest" index="4"/>
+<item historyLabel="findIt_3 Manifest" index="0"/>
+<item historyLabel="findIt Manifest" index="4"/>
+<item historyLabel="findIt_3 Manifest" index="0"/>
+<item historyLabel="findIt Manifest" index="4"/>
+<item historyLabel="fileStuff.java" index="2">
+<position info="not_deleted" x="2837" y="0"/>
 </item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="758" y="0"/>
-</item>
-<item historyLabel="Money.java" index="0">
-<position info="not_deleted" x="53" y="81"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position/>
-</item>
-<item historyLabel="Money.java" index="0">
-<position info="not_deleted" x="168" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="398" y="0"/>
-</item>
-<item historyLabel="ItemType.java" index="4">
+<item historyLabel="second.xml" index="1"/>
+<item historyLabel="placesDisplay.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Money.java" index="0">
-<position info="not_deleted" x="74" y="134"/>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="27" y="5417"/>
 </item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="425" y="0"/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="480" y="0"/>
-</item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="484" y="0"/>
-</item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="484" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="1269" y="0"/>
-</item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="1269" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="InventoryItem.java" index="2">
-<position info="not_deleted" x="1269" y="0"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="Money.java" index="0">
-<position info="not_deleted" x="74" y="134"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
-</item>
-<item historyLabel="MainActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="activity_main.xml" index="1">
-<position/>
-</item>
-<item historyLabel="activity_main.xml" index="5">
+<item historyLabel="Second_Activity.java" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="631" y="0"/>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="732" y="0"/>
 </item>
-<item historyLabel="activity_main.xml" index="1"/>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="631" y="0"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="activity_main.xml" index="1"/>
-<item historyLabel="ItemType.java" index="4">
-<position info="not_deleted" x="0" y="111"/>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="732" y="176"/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="1310" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="28" y="656"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="596" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="143" y="85"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="596" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="230" y="92"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="324" y="360"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="1499" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="1053" y="4388"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="1499" y="0"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="5715" y="0"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
 <position/>
 </item>
-<item historyLabel="activity_main.xml" index="1"/>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="542" y="0"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="5715" y="0"/>
 </item>
-<item historyLabel="activity_main.xml" index="1"/>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="594" y="0"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="1379" y="0"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="2211" y="0"/>
 </item>
-<item historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="1062" y="13"/>
+<item historyLabel="webStuff.java" index="3">
+<position info="not_deleted" x="27" y="0"/>
 </item>
-<item historyLabel="activity_main.xml" index="1"/>
-<item active="true" historyLabel="MainActivity.java" index="3">
-<position info="not_deleted" x="1062" y="13"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="2211" y="0"/>
+</item>
+<item historyLabel="second.xml" index="1"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="2211" y="0"/>
+</item>
+<item historyLabel="second.xml" index="1"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="2211" y="0"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="8164" y="0"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position/>
+</item>
+<item historyLabel="second.xml" index="1"/>
+<item historyLabel="Second_Activity.java" index="7">
+<position/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="3752" y="0"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="2490" y="2953"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="2490" y="2953"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="1887" y="0"/>
+</item>
+<item historyLabel="MainActivity.java" index="6">
+<position info="not_deleted" x="2272" y="3171"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="2287" y="0"/>
+</item>
+<item historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="233" y="0"/>
+</item>
+<item active="true" historyLabel="Second_Activity.java" index="7">
+<position info="not_deleted" x="240" y="49"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -747,6 +770,10 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="devices"/>
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -755,51 +782,56 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="logcat"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="inventoryManager/res/layout/activity_main.xml">
-<persistable path="/inventoryManager/res/layout/activity_main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="webStuff.java" tooltip="findIt_3/src/com/example/lib/webStuff.java">
+<persistable path="/findIt_3/src/com/example/lib/webStuff.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ItemType.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/models/ItemType.java">
-<persistable path="/inventoryManager/src/com/dannis/inventorymanager/models/ItemType.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Second_Activity.java" tooltip="findIt_3/src/com/example/findit_3/Second_Activity.java">
+<persistable path="/findIt_3/src/com/example/findit_3/Second_Activity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Money.java" tooltip="Java_Week2/src/com/dannis/ecom/Money.java">
-<persistable path="/Java_Week2/src/com/dannis/ecom/Money.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="findIt/src/com/dannis/findit/MainActivity.java">
+<persistable path="/findIt/src/com/dannis/findit/MainActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="formThings.java" tooltip="Java_Week2/src/com/dannis/lib/formThings.java">
-<persistable path="/Java_Week2/src/com/dannis/lib/formThings.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="placesDisplay.java" tooltip="findIt/src/com/dannis/findit/placesDisplay.java">
+<persistable path="/findIt/src/com/dannis/findit/placesDisplay.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Phone.java" tooltip="Java_Week2/src/com/dannis/ecom/Phone.java">
-<persistable path="/Java_Week2/src/com/dannis/ecom/Phone.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="findIt_3/AndroidManifest.xml">
+<persistable path="/findIt_3/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="inventoryManager/AndroidManifest.xml">
-<persistable path="/inventoryManager/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="findIt/AndroidManifest.xml">
+<persistable path="/findIt/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/MainActivity.java">
-<persistable path="/inventoryManager/src/com/dannis/inventorymanager/MainActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="fileStuff.java" tooltip="findIt/src/com/dannis/lib/fileStuff.java">
+<persistable path="/findIt/src/com/dannis/lib/fileStuff.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventoryItem.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/models/InventoryItem.java">
-<persistable path="/inventoryManager/src/com/dannis/inventorymanager/models/InventoryItem.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="webStuff.java" tooltip="findIt/src/com/dannis/lib/webStuff.java">
+<persistable path="/findIt/src/com/dannis/lib/webStuff.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="InventoryItem.java" tooltip="inventoryManager/src/com/dannis/inventorymanager/interfaces/InventoryItem.java">
-<persistable path="/inventoryManager/src/com/dannis/inventorymanager/interfaces/InventoryItem.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="fileStuff.java" tooltip="findIt_3/src/com/example/lib/fileStuff.java">
+<persistable path="/findIt_3/src/com/example/lib/fileStuff.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="View.class" tooltip="android.view.View">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Java_Week2/\/Applications\/android-sdk-macosx\/platforms\/android-17\/android.jar&lt;android.view(View.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="findIt_3/res/layout/activity_main.xml">
+<persistable path="/findIt_3/res/layout/activity_main.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" tooltip="Java_Week2/src/com/dannis/ecom/Product.java">
-<persistable path="/Java_Week2/src/com/dannis/ecom/Product.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="second.xml" tooltip="findIt_3/res/layout/second.xml">
+<persistable path="/findIt_3/res/layout/second.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="Java_Week2/res/values/strings.xml">
-<persistable path="/Java_Week2/res/values/strings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="findIt_3/src/com/example/findit_3/Main.java">
+<persistable path="/findIt_3/src/com/example/findit_3/Main.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="Java_Week2/res/layout/activity_main.xml">
-<persistable path="/Java_Week2/res/layout/activity_main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="background.png" tooltip="findIt_3/res/drawable-hdpi/background.png">
+<persistable path="/findIt_3/res/drawable-hdpi/background.png"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="Java_Week2/bin/AndroidManifest.xml">
-<persistable path="/Java_Week2/bin/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Instrumentation.class" tooltip="android.app.Instrumentation">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=Java_Week2/\/Applications\/android-sdk-macosx\/platforms\/android-17\/android.jar&lt;android.app(Instrumentation.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SecondActivity.java" tooltip="LyndaTutorials/src/com/example/lyndatutorials/SecondActivity.java">
+<persistable path="/LyndaTutorials/src/com/example/lyndatutorials/SecondActivity.java"/>
 </file>
 </mruList>
 </workbench>

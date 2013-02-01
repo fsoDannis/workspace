@@ -9,7 +9,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.example.findit_3.Second_Activity.QuoteRequest;
 import com.example.findit_3.R;
 import com.example.findit_3.Main;
 //import com.dannis.findit.favDisplay;
@@ -41,11 +40,6 @@ public class Second_Activity extends Activity{
 	Context _context;
 //	LinearLayout _appLayout;
 	EditText et;
-	TextView _name;
-	TextView _address;
-	TextView _phone;
-	TextView _distance;
-	
 	//searchForm et;
 	//placesDisplay _places;
 	//favDisplay _favorites;
@@ -62,10 +56,6 @@ public class Second_Activity extends Activity{
 		
 		final Button searchButton = (Button) findViewById(R.id.button1);
 		final EditText et = (EditText) findViewById(R.id.editText1);
-		final TextView _name = (TextView) findViewById(R.id._name);
-		final TextView _address = (TextView) findViewById(R.id._address);
-		final TextView _phone = (TextView) findViewById(R.id._phone);
-		final TextView _distance = (TextView) findViewById(R.id._distance);
 	
 	searchButton.setOnClickListener(new OnClickListener() {
 		
@@ -79,57 +69,35 @@ public class Second_Activity extends Activity{
 	////////////////////////APP WORKS UP TO THIS POINT /////////////////////
 	
 
-
-
-	////////////////END OF THE ATTEMPT TO MAKE WORK CODE///////////////////
-	}
-//};
-/////////////////////
-@Override
-public boolean onCreateOptionsMenu(Menu menu) {
-	// Inflate the menu; this adds items to the action bar if it is present.
-	getMenuInflater().inflate(R.menu.activity_main, menu);
-	return true;
-}
-	  
-private void getPlace(String place){
-	Log.i("Click", place);
-	//This Link gets you to the base link to the api service
-	String baseURl = "http://query.yahooapis.com/v1/public/yql";
-	String yql = "select * from local.search where zip='45103' and query='"+ place + "'";
-	String qs;
-	try{
-		qs =URLEncoder.encode(yql,"UTF-8");
-	}catch (Exception e){
-		Log.e("Bad URL","ENCODING PROBLEM");
-		qs="";
-	}
-	URL finalURL;
-	try{
-		finalURL = new URL(baseURl +"?q="+ qs + "&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys");
-		QuoteRequest qr=new QuoteRequest();
-		qr.execute(finalURL);
-	}catch (MalformedURLException e){
-		Log.e("BAD URL","MALFORMED URL");
-		finalURL =null;
-	}
-}
-@SuppressWarnings("unchecked")
-private HashMap<String,String> getHistory(){
-	Object stored = fileStuff.readObjectFile(_context, "history", false);
 	
-	HashMap<String, String> history;
-	if(stored == null){
-		Log.i("HISTORY","No History file found");
-		history = new HashMap<String, String>();
-	}else{
-		history = (HashMap<String, String>) stored;
+	private void getPlace(String place){
+		Log.i("Click", place);
+		//This Link gets you to the base link to the api service
+		String baseURl = "http://query.yahooapis.com/v1/public/yql";
+		String yql = "select * from local.search where zip='45103' and query='"+ place + "'";
+		String qs;
+		try{
+			qs =URLEncoder.encode(yql,"UTF-8");
+		}catch (Exception e){
+			Log.e("Bad URL","ENCODING PROBLEM");
+			qs="";
+		}
+		URL finalURL;
+		try{
+			finalURL = new URL(baseURl +"?q="+ qs + "&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys");
+			QuoteRequest qr=new QuoteRequest();
+			qr.execute(finalURL);
+		}catch (MalformedURLException e){
+			Log.e("BAD URL","MALFORMED URL");
+			finalURL =null;
+		}
 	}
-	return history;
-}
-
-
-public class QuoteRequest extends AsyncTask<URL, Void, String>{
+	
+	
+	
+	
+	
+	private class QuoteRequest extends AsyncTask<URL, Void, String>{
 	@Override
 	protected String doInBackground(URL... urls){
 		String response ="";
@@ -164,10 +132,10 @@ public class QuoteRequest extends AsyncTask<URL, Void, String>{
 				_history.put(ja.getJSONObject(0).getString("Title"), ja.getJSONObject(0).toString());
 				fileStuff.storeObjectFile(_context, "history", _history, false);
 				fileStuff.storeStringFile(_context, "temp", ja.getJSONObject(0).toString(), true);
-				_name.setText(title);	
-				_address.setText(address);	
-				_phone.setText(phone);	
-				_distance.setText(distance + " Miles Away");
+			//	_places._title.setText(title);	
+			//	_places._address.setText(address);	
+			//	_places._phone.setText(phone);	
+			//	_places._distance.setText(distance + " Miles Away");
 			}
 	
 			Log.i("JSON RESULTS","Name:" + title.toString()+" Address:" + address.toString()+" Phone:"+ phone.toString());
@@ -177,8 +145,11 @@ public class QuoteRequest extends AsyncTask<URL, Void, String>{
 
 	}
 }
-}
 
+
+	////////////////END OF THE ATTEMPT TO MAKE WORK CODE///////////////////
+	}
+};
 
 
 //		_context = this;

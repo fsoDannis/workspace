@@ -1,9 +1,0 @@
-package com.example.lyndatutorials;
-
-public class SecondActivity extends Activity{
-
-	private void oncreate() {
-	// TODO Auto-generated method stub
-
-	}
-}
