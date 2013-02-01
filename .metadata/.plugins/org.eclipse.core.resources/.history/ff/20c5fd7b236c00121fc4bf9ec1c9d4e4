@@ -37,7 +37,7 @@ import android.view.View.OnClickListener;
 public class Second_Activity extends Activity{
 
 	Context _context;
-//	LinearLayout _appLayout;
+	LinearLayout _appLayout;
 	EditText et;
 	//searchForm et;
 	//placesDisplay _places;
@@ -57,7 +57,7 @@ public class Second_Activity extends Activity{
 
 //		_context = this;
 //		_appLayout = new LinearLayout(this);
-//		_history = getHistory();
+		_history = getHistory();
 		Log.i("HISTORY READ", _history.toString());
 		
 		//CREATING THE SEARCH BAR & BUTTON
@@ -75,12 +75,12 @@ public class Second_Activity extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Log.i("USER TYPED:",et.getText().toString());
-	//			getPlace(et.getText().toString());
+				getPlace(et.getText().toString());
 				
 			}
 		});
 		
-/*		//DETECT NETWORK CONNECTION
+		//DETECT NETWORK CONNECTION
 		connected = webStuff.getConnectionStatus(_context);
 		if(connected){
 			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context));
@@ -99,10 +99,10 @@ public class Second_Activity extends Activity{
 		//_appLayout.addView(_favorites);
 
 		
-//		_appLayout.setOrientation(LinearLayout.VERTICAL);
+		_appLayout.setOrientation(LinearLayout.VERTICAL);
 		
 		
-//		setContentView(_appLayout);
+		setContentView(_appLayout);
 	}
 
 	@Override
@@ -195,7 +195,6 @@ public class Second_Activity extends Activity{
 				Log.e("JSON","JSON OBJECT EXCEPTION");
 			}
 	
-		}*/
+		}
 	}
-
 }

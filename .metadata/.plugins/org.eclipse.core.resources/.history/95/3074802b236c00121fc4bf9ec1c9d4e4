@@ -37,9 +37,9 @@ import android.view.View.OnClickListener;
 public class Second_Activity extends Activity{
 
 	Context _context;
-//	LinearLayout _appLayout;
+	LinearLayout _appLayout;
 	EditText et;
-	//searchForm et;
+	//searchForm _search;
 	//placesDisplay _places;
 	//favDisplay _favorites;
 	boolean connected = false;
@@ -55,18 +55,18 @@ public class Second_Activity extends Activity{
 	
 
 
-//		_context = this;
-//		_appLayout = new LinearLayout(this);
-//		_history = getHistory();
+		_context = this;
+		_appLayout = new LinearLayout(this);
+		_history = getHistory();
 		Log.i("HISTORY READ", _history.toString());
 		
 		//CREATING THE SEARCH BAR & BUTTON
-//		 et = new searchForm(_context, "Enter a Place...","Find it!");
+//		 _search = new searchForm(_context, "Enter a Place...","Find it!");
 		
 		//ADDING SEARCH HANDLER
-		final Button searchButton = (Button) findViewById(R.id.button1);
-		final EditText et = (EditText) findViewById(R.id.editText1);
-		//Button searchButton = et.getButton();
+		Button searchButton = (Button) findViewById(R.id.button1);
+		EditText et = (EditText) findViewById(R.id.editText1);
+		//Button searchButton = _search.getButton();
 		
 		//GRABBING TEXT WHEN USER TYPES
 	    searchButton.setOnClickListener(new OnClickListener() {
@@ -75,12 +75,12 @@ public class Second_Activity extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Log.i("USER TYPED:",et.getText().toString());
-	//			getPlace(et.getText().toString());
+				getPlace(_search.getField().getText().toString());
 				
 			}
 		});
 		
-/*		//DETECT NETWORK CONNECTION
+		//DETECT NETWORK CONNECTION
 		connected = webStuff.getConnectionStatus(_context);
 		if(connected){
 			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context));
@@ -93,16 +93,16 @@ public class Second_Activity extends Activity{
 	//	_favorites = new favDisplay(_context);
 		
 		//ADDING VIEWS TO THE MAIN LAYOUT
-//		_appLayout.addView(et);
+//		_appLayout.addView(_search);
 //		_appLayout.addView(_places);
 		//Not showing the Display atm
 		//_appLayout.addView(_favorites);
 
 		
-//		_appLayout.setOrientation(LinearLayout.VERTICAL);
+		_appLayout.setOrientation(LinearLayout.VERTICAL);
 		
 		
-//		setContentView(_appLayout);
+		setContentView(_appLayout);
 	}
 
 	@Override
@@ -195,7 +195,6 @@ public class Second_Activity extends Activity{
 				Log.e("JSON","JSON OBJECT EXCEPTION");
 			}
 	
-		}*/
+		}
 	}
-
 }
