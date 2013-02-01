@@ -1,5 +1,0 @@
-package com.dannis.inventorymanager.models;
-
-public enum ItemType {
-
-}

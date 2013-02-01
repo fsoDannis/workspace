@@ -1,8 +1,0 @@
-package com.dannis.inventorymanager.models;
-
-public class InventoryItem implements
-		com.dannis.inventorymanager.interfaces.InventoryItem {
-
-
-
-}

@@ -1,5 +1,0 @@
-package com.dannis.inventorymanager.interfaces;
-
-public interface InventoryItem {
-
-}

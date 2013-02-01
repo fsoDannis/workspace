@@ -1,5 +1,0 @@
-package com.dannis.ecom;
-
-public enum Money {
-
-}
