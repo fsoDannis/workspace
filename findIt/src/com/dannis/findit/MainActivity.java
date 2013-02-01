@@ -173,7 +173,7 @@ public class MainActivity extends Activity {
 					_places._title.setText(title);	
 					_places._address.setText(address);	
 					_places._phone.setText(phone);	
-					_places._distance.setText(distance + "Miles Away");
+					_places._distance.setText(distance + " Miles Away");
 				}
 		
 				Log.i("JSON RESULTS","Name:" + title.toString()+" Address:" + address.toString()+" Phone:"+ phone.toString());

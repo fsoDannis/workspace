@@ -4,6 +4,7 @@ import android.content.Context;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.graphics.Color;
 
 public class searchForm extends LinearLayout{
 	
@@ -22,6 +23,7 @@ public class searchForm extends LinearLayout{
 		
 		_searchButton = new Button(context);
 		_searchButton.setText(buttonText);
+		_searchButton.setBackgroundColor(Color.GREEN);
 		
 		this.addView(_searchField);
 		this.addView(_searchButton);
