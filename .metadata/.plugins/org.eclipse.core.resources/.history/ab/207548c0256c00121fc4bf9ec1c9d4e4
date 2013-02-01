@@ -42,7 +42,7 @@ public class Second_Activity extends Activity{
 	//searchForm et;
 	//placesDisplay _places;
 	//favDisplay _favorites;
-	boolean connected = false;
+//	boolean connected = false;
 //	HashMap<String, String> _history;
 	
 	@Override
@@ -61,13 +61,10 @@ public class Second_Activity extends Activity{
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			Log.i("USER TYPED:",et.getText().toString());
+			
 		}
 	});
 	
-	////////////////////////APP WORKS UP TO THIS POINT /////////////////////
-	
-
 	
 	}
 };
@@ -163,10 +160,10 @@ public class Second_Activity extends Activity{
 			history = (HashMap<String, String>) stored;
 		}
 		return history;
-	}*/
+	}
 	
 	
-	/*private class QuoteRequest extends AsyncTask<URL, Void, String>{
+	private class QuoteRequest extends AsyncTask<URL, Void, String>{
 		@Override
 		protected String doInBackground(URL... urls){
 			String response ="";

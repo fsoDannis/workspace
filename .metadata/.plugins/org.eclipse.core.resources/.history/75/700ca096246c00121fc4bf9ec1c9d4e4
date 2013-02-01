@@ -43,7 +43,7 @@ public class Second_Activity extends Activity{
 	//placesDisplay _places;
 	//favDisplay _favorites;
 	boolean connected = false;
-//	HashMap<String, String> _history;
+	HashMap<String, String> _history;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,56 +52,39 @@ public class Second_Activity extends Activity{
 		
 		TextView tv = (TextView) findViewById(R.id.textView1);
 		tv.setText(getIntent().getExtras().getString("Entered Text"));
-		
-		final Button searchButton = (Button) findViewById(R.id.button1);
-		final EditText et = (EditText) findViewById(R.id.editText1);
 	
-	searchButton.setOnClickListener(new OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			Log.i("USER TYPED:",et.getText().toString());
-		}
-	});
-	
-	////////////////////////APP WORKS UP TO THIS POINT /////////////////////
-	
-
-	
-	}
-};
 
 
 //		_context = this;
 //		_appLayout = new LinearLayout(this);
 //		_history = getHistory();
-//		Log.i("HISTORY READ", _history.toString());
+		Log.i("HISTORY READ", _history.toString());
 		
 		//CREATING THE SEARCH BAR & BUTTON
 //		 et = new searchForm(_context, "Enter a Place...","Find it!");
 		
 		//ADDING SEARCH HANDLER
-
+		final Button searchButton = (Button) findViewById(R.id.button1);
+		final EditText et = (EditText) findViewById(R.id.editText1);
 		//Button searchButton = et.getButton();
 		
 		//GRABBING TEXT WHEN USER TYPES
-//	    searchButton.setOnClickListener(new OnClickListener() {
+	    searchButton.setOnClickListener(new OnClickListener() {
 	
-//		@Override
-//			public void onClick(View v) {
-//				// TODO Auto-generated method stub
-//				Log.i("USER TYPED:",et.getText().toString());
-//				getPlace(et.getText().toString());
+		@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Log.i("USER TYPED:",et.getText().toString());
+	//			getPlace(et.getText().toString());
 				
-//			}
-//	});
+			}
+		});
 		
-	//DETECT NETWORK CONNECTION
-/*		connected = webStuff.getConnectionStatus(_context);
+/*		//DETECT NETWORK CONNECTION
+		connected = webStuff.getConnectionStatus(_context);
 		if(connected){
 			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context));
-		}*/
+		}
 		
 		//ADD PLACES DISPLAY
 	//	_places = new placesDisplay(_context);
@@ -120,7 +103,7 @@ public class Second_Activity extends Activity{
 		
 		
 //		setContentView(_appLayout);
-/*	}
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -163,10 +146,10 @@ public class Second_Activity extends Activity{
 			history = (HashMap<String, String>) stored;
 		}
 		return history;
-	}*/
+	}
 	
 	
-	/*private class QuoteRequest extends AsyncTask<URL, Void, String>{
+	private class QuoteRequest extends AsyncTask<URL, Void, String>{
 		@Override
 		protected String doInBackground(URL... urls){
 			String response ="";
@@ -212,7 +195,7 @@ public class Second_Activity extends Activity{
 				Log.e("JSON","JSON OBJECT EXCEPTION");
 			}
 	
-		}
+		}*/
 	}
 
-}*/
+}

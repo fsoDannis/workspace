@@ -65,9 +65,12 @@ public class Second_Activity extends Activity{
 		}
 	});
 	
-	////////////////////////APP WORKS UP TO THIS POINT /////////////////////
 	
-
+	//DETECT NETWORK CONNECTION
+		connected = webStuff.getConnectionStatus(_context);
+		if(connected){
+			Log.i("NETWORK CONNECTION", webStuff.getConnectionType(_context));
+		}
 	
 	}
 };
@@ -163,10 +166,10 @@ public class Second_Activity extends Activity{
 			history = (HashMap<String, String>) stored;
 		}
 		return history;
-	}*/
+	}
 	
 	
-	/*private class QuoteRequest extends AsyncTask<URL, Void, String>{
+	private class QuoteRequest extends AsyncTask<URL, Void, String>{
 		@Override
 		protected String doInBackground(URL... urls){
 			String response ="";
