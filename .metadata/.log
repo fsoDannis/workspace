@@ -6994,3 +6994,6 @@ java.lang.NumberFormatException: Color value '@drawable/Background' must start w
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-01-31 22:03:37.368
+!MESSAGE Failed to load properties file for project 'findIt_3'
