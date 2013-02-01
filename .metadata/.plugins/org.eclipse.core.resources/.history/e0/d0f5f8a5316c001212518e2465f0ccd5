@@ -59,8 +59,8 @@ public class Second_Activity extends Activity{
 		
 		TextView tv = (TextView) findViewById(R.id.textView1);
 		tv.setText(getIntent().getExtras().getString("Entered Text"));
-	//	_history = getHistory();
-		//Log.i("HISTORY READ", _history.toString());
+		_history = getHistory();
+		Log.i("HISTORY READ", _history.toString());
 		
 		final Button searchButton = (Button) findViewById(R.id.button1);
 		final EditText et = (EditText) findViewById(R.id.editText1);
@@ -156,7 +156,7 @@ public class QuoteRequest extends AsyncTask<URL, Void, String>{
 			String phone = ja.getJSONObject(0).getString("Phone");
 			String distance = ja.getJSONObject(0).getString("Distance");
 			
-/*			//THIS LITTLE TOAST GUY HATES ME CANNOT GET THE "NOT" PART WORKING
+			//THIS LITTLE TOAST GUY HATES ME CANNOT GET THE "NOT" PART WORKING
 			if(queryCount.length()== 0){
 				Toast toast= Toast.makeText(_context,"Invalid Entry", Toast.LENGTH_SHORT);
 				toast.show();
@@ -171,7 +171,7 @@ public class QuoteRequest extends AsyncTask<URL, Void, String>{
 				_address.setText(address);	
 				_phone.setText(phone);	
 				_distance.setText(distance + " Miles Away");
-			}*/
+			}
 			
 			_name.setText(title);	
 			_address.setText(address);	
