@@ -62,10 +62,10 @@ public class Second_Activity extends Activity{
 		
 		final Button searchButton = (Button) findViewById(R.id.button1);
 		final EditText et = (EditText) findViewById(R.id.editText1);
-		 _name = (TextView) findViewById(R.id._name);
-	 _address = (TextView) findViewById(R.id._address);
-		 _phone = (TextView) findViewById(R.id._phone);
-		 _distance = (TextView) findViewById(R.id._distance);
+		final TextView _name = (TextView) findViewById(R.id._name);
+		final TextView _address = (TextView) findViewById(R.id._address);
+		final TextView _phone = (TextView) findViewById(R.id._phone);
+		final TextView _distance = (TextView) findViewById(R.id._distance);
 	
 	searchButton.setOnClickListener(new OnClickListener() {
 		

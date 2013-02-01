@@ -62,10 +62,10 @@ public class Second_Activity extends Activity{
 		
 		final Button searchButton = (Button) findViewById(R.id.button1);
 		final EditText et = (EditText) findViewById(R.id.editText1);
-		 _name = (TextView) findViewById(R.id._name);
-	 _address = (TextView) findViewById(R.id._address);
-		 _phone = (TextView) findViewById(R.id._phone);
-		 _distance = (TextView) findViewById(R.id._distance);
+		final TextView _name = (TextView) findViewById(R.id._name);
+		final TextView _address = (TextView) findViewById(R.id._address);
+		final TextView _phone = (TextView) findViewById(R.id._phone);
+		final TextView _distance = (TextView) findViewById(R.id._distance);
 	
 	searchButton.setOnClickListener(new OnClickListener() {
 		
@@ -170,11 +170,6 @@ public class QuoteRequest extends AsyncTask<URL, Void, String>{
 				_phone.setText(phone);	
 				_distance.setText(distance + " Miles Away");
 			}*/
-			
-			_name.setText(title);	
-			_address.setText(address);	
-			_phone.setText(phone);	
-			_distance.setText(distance + " Miles Away");
 	
 			Log.i("JSON RESULTS","Name:" + title.toString()+" Address:" + address.toString()+" Phone:"+ phone.toString());
 		}catch (JSONException e){
