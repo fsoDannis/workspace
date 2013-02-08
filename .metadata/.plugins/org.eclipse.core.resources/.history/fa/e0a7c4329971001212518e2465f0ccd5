@@ -55,7 +55,6 @@ public class Second_Activity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.second);
 		
-		//Getting data from previous screen
 		TextView tv = (TextView) findViewById(R.id.textView1);
 		tv.setText(getIntent().getExtras().getString("Entered Text"));
 	

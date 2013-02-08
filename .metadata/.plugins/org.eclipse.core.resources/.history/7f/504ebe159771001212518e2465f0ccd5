@@ -55,12 +55,9 @@ public class Second_Activity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.second);
 		
-		//Getting data from previous screen
 		TextView tv = (TextView) findViewById(R.id.textView1);
 		tv.setText(getIntent().getExtras().getString("Entered Text"));
-	
-		
-		//	_history = getHistory();
+	//	_history = getHistory();
 		//Log.i("HISTORY READ", _history.toString());
 		
 		final Button searchButton = (Button) findViewById(R.id.button1);
@@ -80,23 +77,28 @@ public class Second_Activity extends Activity{
 		}
 	});
 	
-	//IMPLICIT INTENT TO CALL THE WEB
-	Button webButton = (Button) findViewById(R.id.button2);
-	webButton.setOnClickListener(new OnClickListener() {
-
-		public void onClick(View v) {
-			Intent internetIntent = new Intent(Intent.ACTION_VIEW,
-					Uri.parse("http://developer.yahoo.com/yql/console/"));
-			startActivity(internetIntent);
-		}
+	
+	Button bt1 = (Button) findViewById(R.id.button2);
+	bt1.setOnClickListener(new OnClickListener() {
+	public void onClick(View v) {
+	Intent internetIntent = new Intent(Intent.ACTION_VIEW,
+	Uri.parse("http://www.google.com"));
+	internetIntent.setComponent(new ComponentName("com.android.browser","com.android.browser.BrowserActivity"));
+	internetIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	startActivity(internetIntent);
 	}
-			);
+	}
+	);
 	
 	
+	////////////////////////APP WORKS UP TO THIS POINT /////////////////////
+	
+
+
 
 	}
-
-
+//};
+/////////////////////
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
 	// Inflate the menu; this adds items to the action bar if it is present.
