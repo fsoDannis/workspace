@@ -128,9 +128,10 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_distance"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Go to the Web"
-        android:textColor="#FFFFFF" />
+        android:layout_marginBottom="22dp"
+        android:text="Go to the Web" 
+        android:textColor="#FFFFFF"/>
 
 </RelativeLayout>
