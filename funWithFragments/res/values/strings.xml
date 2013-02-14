@@ -4,6 +4,6 @@
     <string name="app_name">funWithFragments</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="welcome">Welcome to my Fragment App!</string>
+    <string name="welcome">My Fragment App!</string>
 
 </resources>

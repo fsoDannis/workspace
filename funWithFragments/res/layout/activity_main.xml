@@ -3,12 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
-
+    
+<LinearLayout
+    android:id="@+id/Linearlayout1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight = "1"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome" 
+        android:layout_weight="1"
         android:gravity="center_horizontal"
-        android:paddingTop="5dp"/>
+        android:paddingTop="5dp"
+        android:text="@string/welcome" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="Press Me" 
+        android:layout_weight = "1"/>
+
+</LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.dannis.funwithfragments.Side_Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
 
 </LinearLayout>

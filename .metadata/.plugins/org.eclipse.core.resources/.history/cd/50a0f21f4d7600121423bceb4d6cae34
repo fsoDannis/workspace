@@ -1,0 +1,16 @@
+package com.dannis.funwithfragments;
+
+import android.view.Menu;
+import android.widget.TextView;
+
+public class NewActivity extends Base_Activity{
+
+	TextView nameOut;
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.new_activity, menu);
+		return true;
+	}
+	
+}
