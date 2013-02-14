@@ -7115,3 +7115,25 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 331.
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:142)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SESSION 2013-02-13 20:05:52.972 -----------------------------------------------
+eclipse.buildId=v21.0.1-543035
+java.version=1.7.0_04-ea
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.ide.eclipse.adt.package.product -keyring /Users/Dannis/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-02-13 20:08:30.837
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-02-13 20:08:50.916
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-13 20:15:31.344
+!MESSAGE Failed to load properties file for project 'funWithFragments'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-13 20:43:14.739
+!MESSAGE Failed to load properties file for project 'funWithFragments'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2013-02-13 20:53:12.063
+!MESSAGE activity_main.xml: Couldn't resolve resource @string/welcome
