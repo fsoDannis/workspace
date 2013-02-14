@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.app.Activity;
 import android.view.Menu;
+
 
 public class NewActivity extends Base_Activity{
 
@@ -35,6 +39,26 @@ public class NewActivity extends Base_Activity{
 			nameOut = (TextView) findViewById(R.id.name);
 			nameOut = setText(text);
 		}
+	}
+	
+	public void addComment (View v){
+		String name, comment, other;
+		
+		EditText nameIn = (EditText) findViewById(R.id.nameIn);
+		EditText commentIn = (EditText) findViewById(R.id.commentIn);
+		EditText otherIn = (EditText) findViewById(R.id.otherIn);
+		
+		name = nameIn.getText().toString();
+		comment = commentIn.getText().toString();
+		other = otherIn.getText().toString();
+		
+		TextView nameOut = (TextView) findViewById(R.id.name);
+		TextView commentOut = (TextView) findViewById(R.id.comment);
+		TextView otherOut = (TextView) findViewById(R.id.other);
+		
+		nameOut.setText(name);
+		commentOut.setText(comment);
+		otherOut.setText(other);
 		
 	}
 }

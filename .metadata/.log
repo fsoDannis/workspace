@@ -7137,3 +7137,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.android.
 
 !ENTRY com.android.ide.eclipse.adt 2 0 2013-02-13 20:53:12.063
 !MESSAGE activity_main.xml: Couldn't resolve resource @string/welcome
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2013-02-13 22:40:56.836
+!MESSAGE Failed to load properties file for project 'MT-List'

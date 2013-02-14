@@ -2,21 +2,26 @@ package com.dannis.funwithfragments;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Base_Activity {
+
+	private final String TAG = "Main Activity";
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		Log.i("TAG", "onCreate");
 	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		return true;
+	
+	public void buttonClick (View view){
+		Log.i("TAG", "Starting New Activity");
+		Intent intent = new Intent (this, NewActivity.class);
+		intent.putExtra("screenText", "Hello");
+		startActivity(intent);
 	}
-
 }

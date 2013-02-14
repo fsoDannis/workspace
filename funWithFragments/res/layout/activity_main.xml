@@ -26,15 +26,17 @@
         android:layout_width="158dp"
         android:layout_height="wrap_content"
         android:text="Press Me" 
+        android:onClick="buttonClick"
         android:layout_weight = "1"/>
 
 </LinearLayout>
-
+ 
     <fragment
         android:id="@+id/fragment1"
         android:name="com.dannis.funwithfragments.Side_Fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        tools:layout="@layout/new_activity" />
 
 </LinearLayout>
