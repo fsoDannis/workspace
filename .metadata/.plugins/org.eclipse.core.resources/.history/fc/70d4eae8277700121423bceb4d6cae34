@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 
 public class FirstPageFragment extends Fragment {
@@ -27,12 +26,9 @@ public class FirstPageFragment extends Fragment {
 	
 			LinearLayout view = (LinearLayout) inflater.inflate(R.layout.activity_main, container, false);
 
-
+///Not sure why my Button keeps throwing errors
 			
-			final EditText et = (EditText) view.findViewById(R.id.et_EnterName);
-			et.setTextColor(Color.WHITE);
-			
-			Button B = (Button) view.findViewById(R.id.b_Enter);
+			Button B = (Button) getActivity().findViewById(R.id.b_Enter);
 			B.setBackgroundColor(Color.WHITE);
 			B.setTextColor(Color.BLACK);
 			B.setOnClickListener(new OnClickListener() {

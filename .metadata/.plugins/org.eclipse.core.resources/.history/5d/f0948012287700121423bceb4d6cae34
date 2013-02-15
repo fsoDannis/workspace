@@ -14,8 +14,7 @@ import android.widget.ImageView;
 
 public class Main extends Activity implements FirstPageFragment.FormListener{
 	
-	 EditText et;
-	
+	EditText et;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

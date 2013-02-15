@@ -13,9 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Main extends Activity implements FirstPageFragment.FormListener{
-	
-	 EditText et;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,7 +23,7 @@ public class Main extends Activity implements FirstPageFragment.FormListener{
 		B.setBackgroundColor(Color.WHITE);
 		B.setTextColor(Color.BLACK);
 		
-		et = (EditText) findViewById(R.id.et_EnterName);
+		final EditText et = (EditText) findViewById(R.id.et_EnterName);
 		et.setTextColor(Color.WHITE);
 		//ImageView iv = (ImageView) findViewById(R.drawable.newbg);
 	

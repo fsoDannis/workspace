@@ -12,20 +12,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class Main extends Activity implements FirstPageFragment.FormListener{
-	
-	 EditText et;
-	
+public class Main extends Activity {
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.mainfrag);
+		setContentView(R.layout.activity_main);
 		
 		Button B = (Button) findViewById(R.id.b_Enter);
 		B.setBackgroundColor(Color.WHITE);
 		B.setTextColor(Color.BLACK);
 		
-		et = (EditText) findViewById(R.id.et_EnterName);
+		final EditText et = (EditText) findViewById(R.id.et_EnterName);
 		et.setTextColor(Color.WHITE);
 		//ImageView iv = (ImageView) findViewById(R.drawable.newbg);
 	
@@ -58,17 +56,5 @@ public class Main extends Activity implements FirstPageFragment.FormListener{
 		getMenuInflater().inflate(R.menu.activity_main, menu);
 		return true;
 	}
-
-	
-	//FORM FRAGMENT METHODS
-	@Override 
-	public void onsecondClick() {
-		// TODO Auto-generated method stub
-		Intent intent = new Intent(Main.this, Second_Activity.class);
-		//This is the information that will be sent.
-		intent.putExtra("Entered Text", "Hello, " + et.getText().toString());
-		startActivity(intent);
-	}
-	
 
 }

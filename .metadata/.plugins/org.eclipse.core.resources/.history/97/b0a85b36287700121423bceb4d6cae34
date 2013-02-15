@@ -29,10 +29,10 @@ public class FirstPageFragment extends Fragment {
 
 
 			
-			final EditText et = (EditText) view.findViewById(R.id.et_EnterName);
+			final EditText et = (EditText) getActivity().findViewById(R.id.et_EnterName);
 			et.setTextColor(Color.WHITE);
 			
-			Button B = (Button) view.findViewById(R.id.b_Enter);
+			Button B = (Button) getActivity().findViewById(R.id.b_Enter);
 			B.setBackgroundColor(Color.WHITE);
 			B.setTextColor(Color.BLACK);
 			B.setOnClickListener(new OnClickListener() {
