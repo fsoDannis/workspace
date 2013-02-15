@@ -17,7 +17,7 @@ public class Main extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.mainfrag);
+		setContentView(R.layout.activity_main);
 		
 		Button B = (Button) findViewById(R.id.b_Enter);
 		B.setBackgroundColor(Color.WHITE);
