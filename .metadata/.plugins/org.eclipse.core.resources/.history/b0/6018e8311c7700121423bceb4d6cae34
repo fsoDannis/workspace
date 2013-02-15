@@ -5,8 +5,6 @@
     android:background="@drawable/background2"
     android:orientation="vertical" >
 
-
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
@@ -27,7 +25,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:gravity="center_vertical|center_horizontal"
-        android:hint="Name of Resteraunt"
+        android:hint="Enter any type of location"
         android:textColor="#FFFFFF" />
         
            
@@ -40,11 +38,6 @@
         android:width="200dp"
         android:text="Find it!"
         android:textColor="#FFFFFF" />
-<ScrollView
-android:id="@+id/scrollView"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent" >
-
 
 <LinearLayout 
     android:layout_width="match_parent"
@@ -64,7 +57,7 @@ android:layout_height="fill_parent" >
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
-        android:text="" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/addresssLabel"
@@ -79,7 +72,7 @@ android:layout_height="fill_parent" >
         android:layout_height="wrap_content"
         android:layout_below="@+id/_name"
         android:textColor="#FFFFFF"
-        android:text="" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/phoneLabel"
@@ -93,7 +86,7 @@ android:layout_height="fill_parent" >
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
-        android:text="" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/distanceLabel"
@@ -107,17 +100,19 @@ android:layout_height="fill_parent" >
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#FFFFFF"
-        android:text="" />
+        android:text="TextView" />
+
+
+</LinearLayout>
+   
+
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="XML Source"
+        android:text="Go to the Web"
         android:textColor="#FFFFFF" />
 
-</LinearLayout>
-  </ScrollView>
-    
 </LinearLayout>
