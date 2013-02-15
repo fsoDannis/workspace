@@ -6,13 +6,15 @@
    android:background="@drawable/background"
    >
    
+
+    
         <EditText
         android:id="@+id/et_EnterName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp"
         android:hint="Enter Your Name:" />
         
 
@@ -23,5 +25,4 @@
              android:background="#ffffff"
              android:layout_gravity="center"
              android:text="Enter Application" />
-        
 </LinearLayout>

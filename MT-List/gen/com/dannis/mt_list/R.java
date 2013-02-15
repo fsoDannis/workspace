@@ -9,8 +9,8 @@ package com.dannis.mt_list;
 
 public final class R {
     public static final class array {
-        public static final int tut_links=0x7f040001;
-        public static final int tut_titles=0x7f040000;
+        public static final int pp_links=0x7f040001;
+        public static final int pp_menu_items=0x7f040000;
     }
     public static final class attr {
     }

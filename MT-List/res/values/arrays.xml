@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="tut_titles">
-    <item>Design &amp; Build a 1980s iOS Phone App: Design Comp Slicing</item>
-    <item>Best of Tuts+ in February 2011</item>
-    <item>Create a Brick Breaker Game with the Corona SDK: Game Controls</item>
-    <item>Exporting Graphics for Mobile Apps: PNG or JPEG?</item>
-    <item>Android Tablet Design</item>
-    <item>Build a Titanium Mobile Pizza Ordering App: Order Form Setup</item>
-    <item>Create a Brick Breaker Game with the Corona SDK: Application Setup</item>
-    <item>Android Tablet Virtual Device Configurations</item>
-    <item>Build a Titanium Mobile Pizza Ordering App: Topping Selection</item>
-    <item>Design &amp; Build a 1980s iOS Phone App: Interface Builder Setup</item>
+    <string-array name="pp_menu_items">
+    <item>Calculator</item>
+    <item>Team List</item>
+    <item>ToDo List</item>
+    <item>Poke</item>
+    <item>Inventory</item>
+    <item>Clients</item>
+    <item>Events</item>
+    <item>Orders</item>
+    <item>Expenses</item>
+    <item>Maps</item>
+    <item>Followups</item>
 	</string-array>
 	
-	<string-array name="tut_links">
-    <item>http://pocketparties.mobi</item>
-    <item>http://mobile.tutsplus.com/articles/news/best-of-tuts-in-february-2011/</item>
-    <item>http://mobile.tutsplus.com/tutorials/corona/create-a-brick-breaker-game-with-the-corona-sdk-game-controls/</item>
-    <item>http://mobile.tutsplus.com/tutorials/mobile-design-tutorials/mobile-design_png-or-jpg/</item>
-    <item>http://mobile.tutsplus.com/tutorials/android/android-tablet-design/</item>
-    <item>http://mobile.tutsplus.com/tutorials/appcelerator/build-a-titanium-mobile-pizza-ordering-app-order-form-setup/</item>
-    <item>http://mobile.tutsplus.com/tutorials/corona/corona-sdk_brick-breaker/</item>
-    <item>http://mobile.tutsplus.com/tutorials/android/android-sdk_tablet_virtual-device-configuration/</item>
-    <item>http://mobile.tutsplus.com/tutorials/appcelerator/pizza-ordering-app-part-2/</item>
-    <item>http://mobile.tutsplus.com/tutorials/iphone/1980s-phone-app_interface-builder-setup/</item>
+	<string-array name="pp_links">
+    <item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
+	<item>http://facebook.com/pocketparties</item>
 </string-array>
 </resources>

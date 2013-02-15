@@ -6,6 +6,8 @@
    android:background="@drawable/background"
    >
    
+
+    
         <EditText
         android:id="@+id/et_EnterName"
         android:layout_width="fill_parent"
@@ -23,5 +25,4 @@
              android:background="#ffffff"
              android:layout_gravity="center"
              android:text="Enter Application" />
-        
 </LinearLayout>

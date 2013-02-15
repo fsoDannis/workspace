@@ -11,10 +11,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginBottom="10dp"
-        android:paddingTop="10dp"
-        android:hint="Enter Your Name:" />
-        
+        android:paddingBottom="10dp"
+        android:hint="Enter your Name" />
 
         <Button
             android:id="@+id/b_Enter"
@@ -22,6 +20,5 @@
              android:layout_height="wrap_content"
              android:background="#ffffff"
              android:layout_gravity="center"
-             android:text="Enter Application" />
-        
+            android:text="Enter Application" />
 </LinearLayout>

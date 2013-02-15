@@ -16,9 +16,9 @@ public class TutListActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         setListAdapter(ArrayAdapter.createFromResource(getApplicationContext(),
-                R.array.pp_menu_items, R.layout.list_item));
+                R.array.tut_titles, R.layout.list_item));
 
-        final String[] links = getResources().getStringArray(R.array.pp_links);
+        final String[] links = getResources().getStringArray(R.array.tut_links);
 
         getListView().setOnItemClickListener(new OnItemClickListener() {
 
