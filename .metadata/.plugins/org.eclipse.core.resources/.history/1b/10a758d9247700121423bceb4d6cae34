@@ -15,7 +15,7 @@ public class FirstPageFragment extends Fragment {
 	private FormListener listener;
 
 	public interface FormListener{
-		public void onClick();
+		public void onSecond();
 	}
 	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){

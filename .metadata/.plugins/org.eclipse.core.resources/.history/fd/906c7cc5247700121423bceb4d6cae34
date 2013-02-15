@@ -15,7 +15,7 @@ public class FirstPageFragment extends Fragment {
 	private FormListener listener;
 
 	public interface FormListener{
-		public void onClick();
+		public void onSecond();
 	}
 	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
@@ -33,7 +33,7 @@ public class FirstPageFragment extends Fragment {
 				@Override
 				public void onClick(View v) {
 					// Sending from this class to the "second" view/class
-					listener.onClick();
+					listener.onSecond();
 				}
 			});
 
